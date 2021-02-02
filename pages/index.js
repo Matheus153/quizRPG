@@ -3,6 +3,10 @@ import Head from 'next/head'
 import styles from '../styles/Mstyle.module.css'
 import { useRouter } from 'next/router'
 
+
+import Input from '../src/components/Input'
+import Button from '../src/components/Button'
+
 export default function Home() {
   const router = useRouter()
   const [name, setName] = React.useState('')
@@ -25,17 +29,15 @@ export default function Home() {
 
         // router manda para a proxima página.
       }}>
-        <input className={styles.input} onChange= {function (infosDoEvento) {
-          // console.log(infosDoEvento.target.value) 
-          // Mostra o State, o estado do componente 
-          /* name = infosDoEvento.target.value */
-          setName(infosDoEvento.target.value)
-          // target.value indica no alvo do valor de alguma coisa
-          }
-        } placeholder="Diz aí seu nome"/>
-        <button className={styles.button} type="submit" disabled={name.length === 0} 
-        >jogador {/* name */}
-        </button>
+        <Input
+          name="nomeDoUsuario"
+          onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
+          placeholder="Diz ai seu nome"
+          value={name}
+        />
+        <Button type="submit" disabled={name.length === 0}>
+          {`Jogar`} {/* {name } */}
+        </Button>
       </form>
       
     </div>      
