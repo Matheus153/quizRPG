@@ -15,6 +15,7 @@ export default function Home() {
       </Head>
 
       <h1>Olá, jogador!</h1>
+      
 
       <form onSubmit= {function(infosDoEvento) {
         infosDoEvento.preventDefault()
@@ -24,7 +25,7 @@ export default function Home() {
 
         // router manda para a proxima página.
       }}>
-        <input onChange= {function (infosDoEvento) {
+        <input className={styles.input} onChange= {function (infosDoEvento) {
           // console.log(infosDoEvento.target.value) 
           // Mostra o State, o estado do componente 
           /* name = infosDoEvento.target.value */
@@ -32,8 +33,8 @@ export default function Home() {
           // target.value indica no alvo do valor de alguma coisa
           }
         } placeholder="Diz aí seu nome"/>
-        <button type="submit" disabled={name.length === 0} 
-        >jogador {name} 
+        <button className={styles.button} type="submit" disabled={name.length === 0} 
+        >jogador {/* name */}
         </button>
       </form>
       

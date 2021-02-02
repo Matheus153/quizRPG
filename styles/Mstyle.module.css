@@ -16,6 +16,13 @@
   align-items: center;
 }
 
+
+.input .button{
+  height: 1.3vw;
+  z-index: 9999;
+}
+
+
 .footer {
   width: 100%;
   height: 100px;
