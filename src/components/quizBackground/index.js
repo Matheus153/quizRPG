@@ -21,7 +21,7 @@ const Background = styled.div`
         url('http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg');
       display: block;
       width: 100%;
-      height: 210px;
+      height: 150px;
       position: absolute;
       top: 0;
       left: 0;
