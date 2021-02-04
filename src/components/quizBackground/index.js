@@ -6,7 +6,7 @@ const Background = styled.div`
   object-fit: cover;
   background-position: center;
   background-image: url('http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg');
-  background-color: #FFE7BA;
+  background-color: #363636;
   flex: 1;
   @media screen and (max-width: 500px) {
     background-image: url('http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg');
