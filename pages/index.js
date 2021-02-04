@@ -19,7 +19,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         
-        <h1>Olá, jogador!</h1>
+        <h1 className={styles.title}>Olá, jogador!</h1>
 
         <form onSubmit= {function(infosDoEvento) {
           infosDoEvento.preventDefault()

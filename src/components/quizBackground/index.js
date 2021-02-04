@@ -1,21 +1,23 @@
 import styled from 'styled-components'
 
 const Background = styled.div`
-    width: 100%;
+  width: 100%;
   background-size: cover;
+  object-fit: cover;
   background-position: center;
-  background-image: url('https://i.pinimg.com/originals/d8/50/a9/d850a9b8e89bff51e264ab379f2ae3ee.png');
-  background-color: rgba(0, 0, 0, .3);
+  background-image: url('http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg');
+  background-color: #FFE7BA;
   flex: 1;
   @media screen and (max-width: 500px) {
-    background-image: none;
+    background-image: url('http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg');
+    background-size: cover;
     &:after {
       content: "";
       background-size: cover;
-    background-position: center;
+      background-position: center;
       background-image:
         linear-gradient(transparent),
-        url('https://i.pinimg.com/originals/d8/50/a9/d850a9b8e89bff51e264ab379f2ae3ee.png');
+        url('http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg');
       display: block;
       width: 100%;
       height: 210px;
