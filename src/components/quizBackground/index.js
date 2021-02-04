@@ -5,8 +5,9 @@ const Background = styled.div`
   background-size: cover;
   object-fit: cover;
   background-position: center;
-  background-image: url('http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg');
-  background-color: #363636;
+  background-image: url('http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg'),
+        radial-gradient(100% 60% ellipse at right top, #31319e 0%, rgba(243, 236, 236, 0) 100%),
+        radial-gradient(60% 50% ellipse at center bottom, #29276e 0%, #12122e 100%);
   flex: 1;
   @media screen and (max-width: 500px) {
     background-image: url('http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg');
