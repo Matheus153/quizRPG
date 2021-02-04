@@ -18,7 +18,9 @@ const Background = styled.div`
       background-position: center;
       background-image:
         linear-gradient(transparent),
-        url('http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg');
+        url('http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg'),
+        radial-gradient(100% 60% ellipse at right top, #31319e 0%, rgba(243, 236, 236, 0) 100%),
+        radial-gradient(60% 50% ellipse at center bottom, #29276e 0%, #12122e 100%);
       display: block;
       width: 100%;
       height: 150px;
