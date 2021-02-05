@@ -8,7 +8,7 @@ const InputBase = styled.input`
   font-size: 14px;
   border: 1px solid rgba(0, 0, 0, 0.8) ;
   color: black;
-  background-color: #fefef3;
+  background-color: #d5d3d5;
   border-radius: 5px;
   outline: 0;
   margin-bottom: 25px;
