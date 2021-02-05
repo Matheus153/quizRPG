@@ -4,7 +4,7 @@ const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid #252059;
-  background-color: #fdf5e6;
+  background-color: #fefef3;
   border-radius: 4px;
   overflow: hidden;
 
