@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 
 const Button = styled.button`
-  background-color: #252059;
+  background-color: #4169E1;
   color: #fefef2;
   border-radius: 3px;
   border: 0;
@@ -24,7 +24,7 @@ const Button = styled.button`
   }
 
   &:disabled {
-    background-color: #696969;
+    background-color: #8B8682;
     cursor: not-allowed;
   }
 `;

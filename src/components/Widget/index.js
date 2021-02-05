@@ -3,8 +3,11 @@ import styled from 'styled-components';
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
-  border: 1px solid #252059;
-  background-color: #fefef3;
+  border: 2px solid rgba(31, 29, 29, 0.8); 
+  background-color: rgba(31, 29, 29, 0.93);
+  box-shadow: -11px 11px 21px -4px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -11px 11px 21px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: -11px 11px 21px -4px rgba(0,0,0,0.75);
   border-radius: 4px;
   overflow: hidden;
 
@@ -26,8 +29,10 @@ Widget.Header = styled.header`
   justify-content: flex-start;
   align-items: center;
   padding: 18px 32px;
-  background-color: #252059;
+  background-color: #8B7500;
   width: 100%;
+  border-radius: 4px;
+  
   
   * {
     margin: 0;
