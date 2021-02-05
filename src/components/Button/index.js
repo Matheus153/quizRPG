@@ -24,7 +24,7 @@ const Button = styled.button`
   }
 
   &:disabled {
-    background-color: #979797;
+    background-color: #696969;
     cursor: not-allowed;
   }
 `;
