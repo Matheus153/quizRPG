@@ -1,5 +1,5 @@
 {
-    "title": "Você conhece a banda BTS?",
+    "title": "Quem você seria do BTS?",
     "description": "Um quiz rápido sobre BTS",
     "questions": [
       {
@@ -42,18 +42,16 @@
         ]
       }
     ],
-    "external": [
-      "https://aluraquiz-css.omariosouto.vercel.app/",
-      "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
-    ],
+    
     "theme": {
       "colors": {
         "primary": "#222222",
-        "secondary": "#e89c3f",
+        "secondary": "#692585",
         "mainBg": "#213f4e",
-        "contrastText": "#FFFFFF",
+        "contrastText": "#fefef3",
         "wrong": "#FF5722",
-        "success": "#4CAF50"
+        "success": "#4CAF50",
+        "background": "http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg"
       },
       "borderRadius": "4px"
     }

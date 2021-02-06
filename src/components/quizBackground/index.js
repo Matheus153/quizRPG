@@ -20,8 +20,7 @@ const Background = styled.div`
       background-position: center;
       background-image:
         linear-gradient(transparent),
-        url('http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg'),
-        
+        url('http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg');
       display: block;
       width: 100%;
       height: 150px;

@@ -28,10 +28,11 @@ Widget.Header = styled.header`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 18px 32px;
-  background-color: #8B7500;
+  padding: 16px 32px;
+  background-color: ${({ theme }) => theme.colors.secondary};
   width: 100%;
   border-radius: 4px;
+  text-shadow: -2px 2px 1px rgba(10, 10, 10, .8);
   
   
   * {
