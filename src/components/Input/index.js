@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const InputBase = styled.input`
   width: 100%;
   padding: 15px;
-  font-size: 14px;
+  font-size: 15px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
   color: black;
   background-color: #d5d3d5;

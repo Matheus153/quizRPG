@@ -1,4 +1,7 @@
 {
+    "bg": "http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg",
+    "bg1": "https://4.bp.blogspot.com/-YoZQ1dRYxlg/XLGYhCD2xWI/AAAAAAAAFM4/CeslVGBlopknWfim0DVSUq1rFNBswz8cQCKgBGAs/w2560-h1080-p-k-no-nu/bts-map-of-the-soul-persona-members-uhdpaper.com-4K-27.jpg",
+    "bg2": "http://lojasaraiva.vteximg.com.br/arquivos/ids/31735574/1011019409.jpg?v=637441414163270000",
     "title": "Quem você seria do BTS?",
     "description": "Um quiz rápido sobre BTS",
     "questions": [
@@ -47,11 +50,10 @@
       "colors": {
         "primary": "#222222",
         "secondary": "#692585",
-        "mainBg": "#213f4e",
+        "mainBg": "#202020",
         "contrastText": "#fefef3",
         "wrong": "#FF5722",
-        "success": "#4CAF50",
-        "background": "http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg"
+        "success": "#4CAF50"
       },
       "borderRadius": "4px"
     }

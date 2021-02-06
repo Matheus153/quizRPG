@@ -5,22 +5,19 @@ const Background = styled.div`
   background-size: cover;
   object-fit: cover;
   background-position: center;
-  background-image: url('http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg'),
-        radial-gradient(100% 60% ellipse at right top, #31319e 0%, rgba(243, 236, 236, 0) 100%),
-        radial-gradient(60% 50% ellipse at center bottom, #29276e 0%, #12122e 100%);
+  background-image: url(${({backgroundImage}) => backgroundImage});
+  background-color: ${({ theme }) => theme.colors.mainBg};
   flex: 1;
   @media screen and (max-width: 500px) {
-    background-image: url('http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg'),
-      radial-gradient(100% 60% ellipse at right top, #31319e 0%, rgba(243, 236, 236, 0) 100%),
-      radial-gradient(60% 50% ellipse at center bottom, #29276e 0%, #12122e 100%);;
-    background-size: cover;
+    background-image: url('http://lojasaraiva.vteximg.com.br/arquivos/ids/31735574/1011019409.jpg?v=637441414163270000');
+    background-color: ${({ theme }) => theme.colors.mainBg};
     &:after {
       content: "";
       background-size: cover;
       background-position: center;
       background-image:
         linear-gradient(transparent),
-        url('http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg');
+        url('http://lojasaraiva.vteximg.com.br/arquivos/ids/31735574/1011019409.jpg?v=637441414163270000');
       display: block;
       width: 100%;
       height: 150px;

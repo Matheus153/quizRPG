@@ -11,7 +11,7 @@ const Button = styled.button`
   width: 100%;
   padding: 10px 16px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1;
   text-transform: uppercase;
   outline: 0;

@@ -26,7 +26,7 @@ const StyledContainer = styled.div`
   @media screen and (max-width: 500px) {
     margin: auto;
     padding: 15px;
-    min-height: 95vh;
+    min-height: 92vh;
   }
 `;
 
@@ -35,7 +35,7 @@ export default function Home() {
   const [name, setName] = React.useState('')
 
   return (
-    <Background>
+    <Background backgroundImage={db.bg1}>
       
         <Head>
           <title>Quiz BTS</title>
