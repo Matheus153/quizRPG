@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Background = styled.div`
+const QuizBackground = styled.div`
   width: 100%;
   background-size: cover;
   object-fit: cover;
@@ -28,4 +28,4 @@ const Background = styled.div`
   }
 `;
 
-export default Background
+export default QuizBackground;

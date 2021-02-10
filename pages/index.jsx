@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 import db from '../db.json';
 import Widget from '../src/components/Widget';
-import Background from '../src/components/QuizBackground'
+import QuizBackground from '../src/components/QuizBackground'
 import Input from '../src/components/Input'
 import Button from '../src/components/Button'
 
@@ -36,7 +36,7 @@ export default function Home() {
   const [name, setName] = React.useState('')
 
   return (
-    <Background backgroundImage={db.bg1}>
+    <QuizBackground backgroundImage={db.bg1}>
       
         <Head>
           <title>Quiz BTS</title>
@@ -79,7 +79,7 @@ export default function Home() {
           </Widget>
         </StyledContainer>
           
-    </Background>
+    </QuizBackground>
     
   )
 

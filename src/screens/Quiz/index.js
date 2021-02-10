@@ -4,7 +4,7 @@ import { Lottie } from '@crello/react-lottie';
 import db from '../../../db.json';
 import Widget from '../../components/Widget';
  
-import Background from '../../components/QuizBackground';
+import QuizBackground from '../../components/QuizBackground';
 import QuizContainer from '../../components/QuizContainer';
 import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
@@ -205,7 +205,7 @@ export default function QuizPage({ externalQuestions, externalBg }) {
   }
 
   return (
-    <Background backgroundImage={bg}>
+    <QuizBackground backgroundImage={bg}>
       <QuizContainer>
         <img src={db.theme.quizlogo} width="120px" margin="auto"/>
         {screenState === screenStates.QUIZ && (
@@ -222,6 +222,6 @@ export default function QuizPage({ externalQuestions, externalBg }) {
 
         {screenState === screenStates.RESULT && <ResultWidget results={results} />}
       </QuizContainer>
-    </Background>
+    </QuizBackground>
   );
 }
