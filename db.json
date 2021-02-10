@@ -53,7 +53,60 @@
           "V",
           "Suga"
         ]
+      },
+
+      {
+        "image": "http://45.media.tumblr.com/6f2579eeeca5b8b7d31cdebdf20356e1/tumblr_o5w4al5TVc1u7z55eo3_540.gif",
+        "title": "Qual está errado?",
+        "description": "Consegue essa?",
+        "answer": 2,
+        "alternatives": [
+          "V - nasceu em Daegu",
+          "Rap Monster - nasceu em Ilsan",
+          "Jk - nasceu em Gwangju",
+          "Jin - nasceu em Gwancheon"
+        ]
+      },
+
+      {
+        "image": "https://data.whicdn.com/images/318152273/original.gif",
+        "title": "Qual o membro considerado como o melhor dançarino?",
+        "description": "Essa você sabe!",
+        "answer": 2,
+        "alternatives": [
+          "Jungkook",
+          "Suga",
+          "J-Hope",
+          "Rap monster"      
+        ]
+      },
+
+      {
+        "image": "https://img.wattpad.com/64a3443af9778225e9e6551777c8abfab8133fa1/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f674b5355564c35716f4744764c673d3d2d3435393837373232332e313464643565303262376463366632663830313636363636323039362e676966",
+        "title": "Qual foi o membro que participou de um concurso de Drag Queen?",
+        "description": "Tens o que é necessário?",
+        "answer": 0,
+        "alternatives": [
+          "V",
+          "Rap monster",
+          "Jin",
+          "Suga"
+        ]
+      },
+
+      {
+        "image": "https://i.pinimg.com/originals/39/d3/a0/39d3a087c479c75afcd25f3e963eb3cb.gif",
+        "title": "De onde vem o apelido 'V' para o integrante Kim Taehyung?",
+        "description": "Difícil.",
+        "answer": 3,
+        "alternatives": [
+          "Da palavra 'vida' ",
+          "Do símbolo formado com os dedos que forma 'V' ",
+          "De um lugar chamado Volant",
+          "Da palavra 'vitória' "
+        ]
       }
+      
     ],
     
     "theme": {

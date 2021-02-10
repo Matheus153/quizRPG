@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.success};
-  color: #fefef2;
-  border-radius: 3px;
+  color: ${({ theme }) => theme.colors.contrastText};
+  border-radius: ${({ theme }) => theme.borderRadius};
   border: 0;
 
   width: 100%;
@@ -20,7 +20,7 @@ const Button = styled.button`
 
   &:hover,
   &:focus {
-    opacity: .8;
+    opacity: .6;
   }
 
   &:disabled {

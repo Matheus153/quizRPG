@@ -8,6 +8,7 @@ import { motion } from 'framer-motion'
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizBackground from '../src/components/quizBackground'
+import GitHubCorner from '../src/components/GitHubCorner'
 import Input from '../src/components/Input'
 import Button from '../src/components/Button'
 
@@ -78,7 +79,7 @@ export default function Home() {
           </Widget.Content>
           </Widget>
         </StyledContainer>
-          
+        <GitHubCorner projectUrl="https://github.com/Matheus153"/>  
     </QuizBackground>
     
   )
