@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 import db from '../db.json';
 import Widget from '../src/components/Widget';
-import QuizBackground from '../src/components/QuizBackground'
+import QuizBackground from '../src/components/quizBackground'
 import Input from '../src/components/Input'
 import Button from '../src/components/Button'
 

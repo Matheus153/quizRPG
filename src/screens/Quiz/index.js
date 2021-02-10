@@ -4,7 +4,7 @@ import { Lottie } from '@crello/react-lottie';
 import db from '../../../db.json';
 import Widget from '../../components/Widget';
  
-import QuizBackground from '../../components/QuizBackground';
+import QuizBackground from '../../components/quizBackground';
 import QuizContainer from '../../components/QuizContainer';
 import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
