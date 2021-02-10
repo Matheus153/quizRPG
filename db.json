@@ -19,31 +19,39 @@
       },
       {
         "image": "https://capricho.abril.com.br/wp-content/uploads/2019/12/v-bts.gif?crop=94px%2C0px%2C353px%2C240px&resize=680%2C453&quality=85&strip=info",
-        "title": "Que tipos de dados são suportados em JavaScript?",
+        "title": "Qual foi o Álbum de maior sucesso?",
         "description": "E agora? Você sabe?",
         "answer": 0,
         "alternatives": [
-          "Number, String, Undefined, Null e Bool.",
-          "Int, String, Undefined, Null e Bool."
+          "Map of the Soul",
+          "Dark & Wild",
+          "Love Yourself: Tear",
+          "Wings"
         ]
       },
       {
         "image": "https://media.giphy.com/media/bpTutlpHCXsPQbHUMV/giphy.gif",
-        "title": "Qual a diferença de window e global?",
-        "answer": 1,
+        "title": "Qual o membro mais novo da banda?",
+        "description": "Fácil não?",
+        "answer": 4,
         "alternatives": [
-          "São a mesma coisa",
-          "window é o escopo global no browser, e global no node"
+          "RM",
+          "Jimin",
+          "Suga",
+          "Jin",
+          "Jungkook"
         ]
       },
       {
         "image": "https://data.whicdn.com/images/329081289/original.gif",
-        "title": "Qual a forma antiga de trabalhar com AJAX na Web?",
-        "answer": 1,
+        "title": "Qual foi o membro SURPRESA (que não havia sido divulgado antes do debut)?",
+        "description": "Essa é difícil!",
+        "answer": 2,
         "alternatives": [
-          "JSONHttpRequest",
-          "XMLHttpRequest",
-          "fetch"
+          "Jin",
+          "Jimin",
+          "V",
+          "Suga"
         ]
       }
     ],
