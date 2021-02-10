@@ -9,6 +9,7 @@
     "eslint:init": "eslint --init"
   },
   "dependencies": {
+    "@crello/react-lottie": "^0.0.11",
     "framer-motion": "^3.3.0",
     "next": "10.0.6",
     "react": "17.0.1",

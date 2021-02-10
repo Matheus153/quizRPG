@@ -10,14 +10,8 @@ const Background = styled.div`
   flex: 1;
   @media screen and (max-width: 500px) {
     background-image: url('http://lojasaraiva.vteximg.com.br/arquivos/ids/31735574/1011019409.jpg?v=637441414163270000');
-    background-color: ${({ theme }) => theme.colors.mainBg};
     &:after {
       content: "";
-      background-size: cover;
-      background-position: center;
-      background-image:
-        linear-gradient(transparent),
-        url('http://lojasaraiva.vteximg.com.br/arquivos/ids/31735574/1011019409.jpg?v=637441414163270000');
       display: block;
       width: 100%;
       height: 150px;

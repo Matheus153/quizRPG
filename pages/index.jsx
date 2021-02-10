@@ -2,11 +2,12 @@ import React from 'react'
 import Head from 'next/head'
 import styled from 'styled-components'
 import { useRouter } from 'next/router'
+import { motion } from 'framer-motion'
 /* import styles from '../styles/Mstyle.module.css' */
 
 import db from '../db.json';
 import Widget from '../src/components/Widget';
-import Background from '../src/components/quizBackground'
+import Background from '../src/components/QuizBackground'
 import Input from '../src/components/Input'
 import Button from '../src/components/Button'
 
@@ -14,10 +15,10 @@ const StyledContainer = styled.div`
   width: 100%;
   
   // pressetes abaixo deixam o quiz no canto superior esquerdo
-  /*max-width: 350px; 
+  max-width: 350px;
   padding-top: 45px;
-  margin: auto 10%; */
-  min-height: 100vh;
+  margin: auto 38%; 
+  min-height: 100vh; 
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
@@ -42,7 +43,16 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <StyledContainer>
-          <Widget>
+          <Widget
+          as={motion.section}
+          transition={{ delay: 0, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%'}
+          }}
+          initial="hidden"
+          animate="show"
+          >
           <Widget.Header>
             <h1>{db.title}</h1>
           </Widget.Header>
@@ -50,7 +60,6 @@ export default function Home() {
           <Widget.Content>
             <form onSubmit= {function(infosDoEvento) {
                 infosDoEvento.preventDefault()
-              
                 router.push(`/quiz?name= ${name}`)
                 console.log('Fazendo uma submissão pelo react')
 
@@ -69,9 +78,7 @@ export default function Home() {
           </Widget.Content>
           </Widget>
         </StyledContainer>
-        
           
-            
     </Background>
     
   )

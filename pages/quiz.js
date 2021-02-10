@@ -1,12 +1,16 @@
-import Head from 'next/head'
-import styles from '../styles/Mstyle.module.css'
+/* eslint-disable react/prop-types */
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import QuizScreen from '../src/screens/Quiz';
+import db from '../db.json';
 
-export default function QuizPage() {
-    return(
-        <div className={styles.container}>
-        
-        <h1>Página do quiz</h1>
-
-        </div>
-    )
+export default function QuizDaGaleraPage() {
+  return (
+    <ThemeProvider theme={db.theme}>
+      <QuizScreen
+        externalQuestions={db.questions}
+        externalBg={db.bg1}
+      />
+    </ThemeProvider>
+  );
 }

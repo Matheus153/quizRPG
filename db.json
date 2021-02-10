@@ -2,21 +2,23 @@
     "bg": "http://wallup.net/wp-content/uploads/2017/05/29/433387-ultra-wide-painting-fantasy_art.jpg",
     "bg1": "https://4.bp.blogspot.com/-YoZQ1dRYxlg/XLGYhCD2xWI/AAAAAAAAFM4/CeslVGBlopknWfim0DVSUq1rFNBswz8cQCKgBGAs/w2560-h1080-p-k-no-nu/bts-map-of-the-soul-persona-members-uhdpaper.com-4K-27.jpg",
     "bg2": "http://lojasaraiva.vteximg.com.br/arquivos/ids/31735574/1011019409.jpg?v=637441414163270000",
-    "title": "Quem você seria do BTS?",
+    "title": "Você conhece o BTS?",
     "description": "Um quiz rápido sobre BTS",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/j5P0DQIOf4PonLi55G/giphy.gif",
-        "title": "Qual a diferença entre = , == e === ?",
+        "image": "https://i.pinimg.com/originals/27/ff/6e/27ff6e6ee84a488400bc59b1ab9a7fdc.gif",
+        "title": "Em que ano foi criada a banda BTS?",
         "description": "Pergunta fácil em!",
         "answer": 1,
         "alternatives": [
-          "São a mesma coisa",
-          "O = significa atribuição de valor. Já == verifica a igualdade do valor, enquanto === verifica valor e tipo de variável."
+          "2010",
+          "2013",
+          "2012",
+          "2015"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/Ie2Hs3A0uJRtK/giphy.gif",
+        "image": "https://capricho.abril.com.br/wp-content/uploads/2019/12/v-bts.gif?crop=94px%2C0px%2C353px%2C240px&resize=680%2C453&quality=85&strip=info",
         "title": "Que tipos de dados são suportados em JavaScript?",
         "description": "E agora? Você sabe?",
         "answer": 0,
@@ -26,7 +28,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/iI4vhciiVh2b3j9sgo/giphy.gif",
+        "image": "https://media.giphy.com/media/bpTutlpHCXsPQbHUMV/giphy.gif",
         "title": "Qual a diferença de window e global?",
         "answer": 1,
         "alternatives": [
@@ -35,7 +37,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/iI4vhciiVh2b3j9sgo/giphy.gif",
+        "image": "https://data.whicdn.com/images/329081289/original.gif",
         "title": "Qual a forma antiga de trabalhar com AJAX na Web?",
         "answer": 1,
         "alternatives": [
@@ -52,10 +54,12 @@
         "secondary": "#692585",
         "mainBg": "#202020",
         "contrastText": "#fefef3",
-        "wrong": "#FF5722",
+        "wrong": "#FF4d22",
         "success": "#4CAF50"
       },
-      "borderRadius": "4px"
+      "borderRadius": "4px",
+      "quizlogo": "https://dewey.tailorbrands.com/production/brand_version_mockup_image/298/4605243298_545beea1-9f67-44b1-bd55-710f841a163d.png?cb=1612835865",
+      "quizlogo2": "https://dewey.tailorbrands.com/production/brand_version_mockup_image/792/4611444792_e5c61721-d613-4d5f-9ac5-18c9003dbb65.png?cb=1612905441"
     }
   }
   
