@@ -207,7 +207,9 @@ export default function QuizPage({ externalQuestions, externalBg }) {
   return (
     <QuizBackground backgroundImage={bg}>
       <QuizContainer>
-        <img src={db.theme.quizlogo} width="120px" margin="auto"/>
+        <img src={db.theme.quizlogo} width="120px" margin="auto" style={{ 
+          background: 'rgba(45, 49, 53, 0.1)',
+         }}/>
         {screenState === screenStates.QUIZ && (
           <QuestionWidget
             question={question}
