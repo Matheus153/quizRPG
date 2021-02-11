@@ -3,12 +3,12 @@ import styled from 'styled-components';
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
-  border: 2px solid rgba(31, 29, 29, 0.8); 
+  border: 1px solid rgba(31, 29, 29, 0.8); 
   background-color: rgba(31, 29, 29, 0.93);
   box-shadow: -11px 11px 21px -4px rgba(0,0,0,0.75);
   -webkit-box-shadow: -11px 11px 21px -4px rgba(0,0,0,0.75);
   -moz-box-shadow: -11px 11px 21px -4px rgba(0,0,0,0.75);
-  border-radius: 4px;
+  border-radius: ${({ theme }) => theme.borderRadius};
   overflow: hidden;
 
   h1, h2, h3 {
@@ -31,7 +31,7 @@ Widget.Header = styled.header`
   padding: 16px 32px;
   background-color: ${({ theme }) => theme.colors.secondary};
   width: 100%;
-  border-radius: 4px;
+  border-radius: ${({ theme }) => theme.borderRadius};
   text-shadow: -2px 2px 1px rgba(10, 10, 10, .8);
   
   

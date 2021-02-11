@@ -79,15 +79,8 @@ export default function Home() {
           </Widget.Content>
           </Widget>
         </StyledContainer>
-        <GitHubCorner projectUrl="https://github.com/Matheus153"
-        as={motion.section}
-        transition={{ delay: 0, duration: 0.5 }}
-        variants={{
-          show: { opacity: 1, y: '0' },
-          hidden: { opacity: 0, y: '100%'}
-        }}
-        initial="hidden"
-        animate="show"/>  
+        
+        <GitHubCorner projectUrl="https://github.com/Matheus153"/> 
     </QuizBackground>
     
   )

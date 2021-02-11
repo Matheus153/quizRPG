@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.success};
   color: ${({ theme }) => theme.colors.contrastText};
-  border-radius: ${({ theme }) => theme.borderRadius};
+  border-radius: 5px;
   border: 0;
 
   width: 100%;
