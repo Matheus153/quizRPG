@@ -41,7 +41,7 @@ export default function Home() {
       
         <Head>
           <title>Quiz BTS</title>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="https://img.icons8.com/nolan/2x/bts-logo.png" />
         </Head>
         <StyledContainer>
           <Widget
