@@ -7,7 +7,6 @@ const Button = styled.button`
   color: ${({ theme }) => theme.colors.contrastText};
   border-radius: 5px;
   border: 0;
-
   width: 100%;
   padding: 10px 16px;
   font-weight: bold;
