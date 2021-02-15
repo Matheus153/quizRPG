@@ -16,7 +16,7 @@ const SVGWrapper = styled.svg`
   color: ${({ theme }) => theme.colors.contrastText};
   cursor: pointer;
   &:hover .octo-arm{
-    animation:octocat-wave 560ms ease-in-out
+    animation:octocat-wave 580ms ease-in-out
   }
   @keyframes octocat-wave{
     0%,100%{transform:rotate(0)}

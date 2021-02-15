@@ -80,17 +80,17 @@ export default function Home() {
           </Widget>
         </StyledContainer>
         
-        <GitHubCorner 
-        as={motion.div}
-        transition={{ delay: 0.2, duration: 0.55 }}
-        variants={{
-          show: { opacity: 1, y: '0' },
-          hidden: { opacity: 0, y: '100%'}
-        }}
-        initial="hidden"
-        animate="show"
-        
-        projectUrl="https://github.com/Matheus153"/> 
+      <GitHubCorner
+      as={motion.div}
+      transition={{ delay: 0.2, duration: 0.55 }}
+      variants={{
+        show: { opacity: 1, y: '0' },
+        hidden: { opacity: 0, y: '100%'}
+      }}
+      initial="hidden"
+      animate="show"
+      
+      projectUrl="https://github.com/Matheus153"></GitHubCorner>
     </QuizBackground>
     
   )
