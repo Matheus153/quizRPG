@@ -82,10 +82,10 @@ export default function Home() {
         
         <GitHubCorner projectUrl="https://github.com/Matheus153"
         as={motion.section}
-        transition={{ delay: 0.1, duration: 0.55 }}
+        transition={{ delay: 0, duration: 1 }}
         variants={{
-          show: { opacity: 1, y: '0' },
-          hidden: { opacity: 0, y: '100%'}
+          show: { opacity: 1 },
+          hidden: { opacity: 0 }
         }}
         initial="hidden"
         animate="show"/> 
