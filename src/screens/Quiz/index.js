@@ -4,7 +4,7 @@ import { Lottie } from '@crello/react-lottie';
 import db from '../../../db.json';
 import Widget from '../../components/Widget';
  
-import Background from '../../components/QuizBackground';
+import QuizBackground from '../../components/quizBackground';
 import QuizContainer from '../../components/QuizContainer';
 import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
@@ -22,7 +22,7 @@ function ResultWidget({ results }) {
 
       <Widget.Content>
         <p>
-          Você acertou
+          Boa, você acertou
           {' '}
           {/* {results.reduce((somatoriaAtual, resultAtual) => {
             const isAcerto = resultAtual === true;
@@ -38,7 +38,7 @@ function ResultWidget({ results }) {
         <ul>
           {results.map((result, index) => (
             <li key={`result__${index}`}>
-              #
+              # 
               {index + 1}
               {' '}
               Resultado:
@@ -104,9 +104,9 @@ function QuestionWidget({
         src={question.image}
       />
       <Widget.Content>
-        <h2>
+        <h3>
           {question.title}
-        </h2>
+        </h3>
         <p>
           {question.description}
         </p>
@@ -154,7 +154,7 @@ function QuestionWidget({
             Confirmar
           </Button>
           {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
+          {isQuestionSubmited && !isCorrect && <p>Que pena!</p>}
         </AlternativesForm>
       </Widget.Content>
     </Widget>
@@ -205,9 +205,9 @@ export default function QuizPage({ externalQuestions, externalBg }) {
   }
 
   return (
-    <Background backgroundImage={bg}>
+    <QuizBackground backgroundImage={bg}>
       <QuizContainer>
-        <img src={db.theme.quizlogo} width="120px" margin="auto"/>
+        <img src={db.theme.quizlogo} width="120px" margin="auto" />
         {screenState === screenStates.QUIZ && (
           <QuestionWidget
             question={question}
@@ -222,6 +222,6 @@ export default function QuizPage({ externalQuestions, externalBg }) {
 
         {screenState === screenStates.RESULT && <ResultWidget results={results} />}
       </QuizContainer>
-    </Background>
+    </QuizBackground>
   );
 }
