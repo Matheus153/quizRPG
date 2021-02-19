@@ -19,45 +19,107 @@
       },
       {
         "image": "https://capricho.abril.com.br/wp-content/uploads/2019/12/v-bts.gif?crop=94px%2C0px%2C353px%2C240px&resize=680%2C453&quality=85&strip=info",
-        "title": "Que tipos de dados são suportados em JavaScript?",
+        "title": "Qual foi o Álbum de maior sucesso?",
         "description": "E agora? Você sabe?",
         "answer": 0,
         "alternatives": [
-          "Number, String, Undefined, Null e Bool.",
-          "Int, String, Undefined, Null e Bool."
+          "Map of the Soul",
+          "Dark & Wild",
+          "Love Yourself: Tear",
+          "Wings"
         ]
       },
       {
         "image": "https://media.giphy.com/media/bpTutlpHCXsPQbHUMV/giphy.gif",
-        "title": "Qual a diferença de window e global?",
-        "answer": 1,
+        "title": "Qual o membro mais novo da banda?",
+        "description": "Fácil não?",
+        "answer": 4,
         "alternatives": [
-          "São a mesma coisa",
-          "window é o escopo global no browser, e global no node"
+          "RM",
+          "Jimin",
+          "Suga",
+          "Jin",
+          "Jungkook"
         ]
       },
       {
         "image": "https://data.whicdn.com/images/329081289/original.gif",
-        "title": "Qual a forma antiga de trabalhar com AJAX na Web?",
-        "answer": 1,
+        "title": "Qual foi o membro SURPRESA (que não havia sido divulgado antes do debut)?",
+        "description": "Essa é difícil!",
+        "answer": 2,
         "alternatives": [
-          "JSONHttpRequest",
-          "XMLHttpRequest",
-          "fetch"
+          "Jin",
+          "Jimin",
+          "V",
+          "Suga"
+        ]
+      },
+
+      {
+        "image": "http://45.media.tumblr.com/6f2579eeeca5b8b7d31cdebdf20356e1/tumblr_o5w4al5TVc1u7z55eo3_540.gif",
+        "title": "Qual está errado?",
+        "description": "Consegue essa?",
+        "answer": 2,
+        "alternatives": [
+          "V - nasceu em Daegu",
+          "Rap Monster - nasceu em Ilsan",
+          "Jk - nasceu em Gwangju",
+          "Jin - nasceu em Gwancheon"
+        ]
+      },
+
+      {
+        "image": "https://data.whicdn.com/images/318152273/original.gif",
+        "title": "Qual o membro considerado como o melhor dançarino?",
+        "description": "Essa você sabe!",
+        "answer": 2,
+        "alternatives": [
+          "Jungkook",
+          "Suga",
+          "J-Hope",
+          "Rap monster"      
+        ]
+      },
+
+      {
+        "image": "https://img.wattpad.com/64a3443af9778225e9e6551777c8abfab8133fa1/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f674b5355564c35716f4744764c673d3d2d3435393837373232332e313464643565303262376463366632663830313636363636323039362e676966",
+        "title": "Qual foi o membro que participou de um concurso de Drag Queen?",
+        "description": "Tens o que é necessário?",
+        "answer": 0,
+        "alternatives": [
+          "V",
+          "Rap monster",
+          "Jin",
+          "Suga"
+        ]
+      },
+
+      {
+        "image": "https://i.pinimg.com/originals/39/d3/a0/39d3a087c479c75afcd25f3e963eb3cb.gif",
+        "title": "De onde vem o apelido 'V' para o integrante Kim Taehyung?",
+        "description": "Difícil.",
+        "answer": 2,
+        "alternatives": [
+          "É a inicial da cidade natal de V ",
+          "Do símbolo formado com os dedos que forma 'V' ",
+          "Da palavra 'vitória' ",
+          "Da música favorita dele"
+         
         ]
       }
+      
     ],
     
     "theme": {
       "colors": {
         "primary": "#222222",
-        "secondary": "#692586",
+        "secondary": "#6F05C0",
         "mainBg": "#202020",
         "contrastText": "#fefef3",
         "wrong": "#FF4d22",
         "success": "#4CAF50"
       },
-      "borderRadius": "4px",
+      "borderRadius": "8px",
       "quizlogo": "https://dewey.tailorbrands.com/production/brand_version_mockup_image/298/4605243298_545beea1-9f67-44b1-bd55-710f841a163d.png?cb=1612835865",
       "quizlogo2": "https://dewey.tailorbrands.com/production/brand_version_mockup_image/792/4611444792_e5c61721-d613-4d5f-9ac5-18c9003dbb65.png?cb=1612905441"
     }

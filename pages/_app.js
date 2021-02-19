@@ -41,9 +41,9 @@ const { theme } = db;
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <Head>
-            <title>Quiz BTS</title>
-            <link rel="icon" href="/favicon.ico" />
+ <Head>
+          <title>Quiz BTS</title>
+          <link rel="icon" href="https://img.icons8.com/nolan/2x/bts-logo.png" />
         </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />

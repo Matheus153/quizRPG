@@ -7,7 +7,8 @@ import { motion } from 'framer-motion'
 
 import db from '../db.json';
 import Widget from '../src/components/Widget';
-import Background from '../src/components/QuizBackground'
+import QuizBackground from '../src/components/quizBackground'
+import GitHubCorner from '../src/components/GitHubCorner'
 import Input from '../src/components/Input'
 import Button from '../src/components/Button'
 
@@ -36,16 +37,16 @@ export default function Home() {
   const [name, setName] = React.useState('')
 
   return (
-    <Background backgroundImage={db.bg1}>
+    <QuizBackground backgroundImage={db.bg1}>
       
         <Head>
           <title>Quiz BTS</title>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="https://img.icons8.com/nolan/2x/bts-logo.png" />
         </Head>
         <StyledContainer>
           <Widget
           as={motion.section}
-          transition={{ delay: 0, duration: 0.5 }}
+          transition={{ delay: 0.1, duration: 0.55 }}
           variants={{
             show: { opacity: 1, y: '0' },
             hidden: { opacity: 0, y: '100%'}
@@ -68,7 +69,7 @@ export default function Home() {
                 <Input
                   name="nomeDoUsuario"
                   onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
-                  placeholder="Diz aí seu nome"
+                  placeholder="Diz aí seu nome..."
                   value={name}
                 />
                 <Button type="submit" disabled={name.length === 0}>
@@ -78,8 +79,9 @@ export default function Home() {
           </Widget.Content>
           </Widget>
         </StyledContainer>
-          
-    </Background>
+        
+      <GitHubCorner projectUrl="https://github.com/Matheus153"/>
+    </QuizBackground>
     
   )
 
