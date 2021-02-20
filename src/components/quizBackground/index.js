@@ -9,7 +9,7 @@ const QuizBackground = styled.div`
   background-color: ${({ theme }) => theme.colors.mainBg};
   flex: 1;
   @media screen and (max-width: 500px) {
-    background-image: url('http://lojasaraiva.vteximg.com.br/arquivos/ids/31735574/1011019409.jpg?v=637441414163270000');
+    background-image: url('https://wallpaper.dog/large/10821108.jpg');
     &:after {
       content: "";
       display: block;
