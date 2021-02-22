@@ -63,12 +63,13 @@ Widget.Topic = styled.a`
   margin-bottom: 8px;
   cursor: pointer;
   border-radius: 4px;
-  transition: .3s;
+  transition: .25s;
   display: block;
   
   &:hover,
   &:focus {
-    opacity: .5;
+    opacity: .6;
+    transform: translateX(10px);
   }
 `;
 
