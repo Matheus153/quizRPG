@@ -10,7 +10,7 @@ import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
 
-import loadingAnimation from './animations/loading.json';
+import loadingAnimation from './animations/Bts.json';
 import { ThemeConsumer } from 'styled-components';
 
 function ResultWidget({ results }) {
@@ -153,7 +153,7 @@ function QuestionWidget({
           <Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
           </Button>
-          {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
+          {isQuestionSubmited && isCorrect && <p>Boa, acertou!</p>}
           {isQuestionSubmited && !isCorrect && <p>Que pena!</p>}
         </AlternativesForm>
       </Widget.Content>
