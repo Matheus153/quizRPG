@@ -1,34 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+	<img src="public/Banner-bts.png" with="100%"/>
+	<h1>Quiz</h1>
+</div>
 
-## Getting Started
+![Badge](https://img.shields.io/badge/Quiz-CDZ-%23542F61?style=for-the-badge&logo=appveyor)
+![Badge](https://img.shields.io/badge/Version-0.1.0-%23542F61?style=for-the-badge&logo=appveyor)
+![Badge](https://img.shields.io/badge/React-v16.18.0-%233570B2?style=for-the-badge&logo=appveyor)
+![Badge](https://img.shields.io/badge/Node-v14.15.4-%2300B98E?style=for-the-badge&logo=appveyor)
+![Badge](https://img.shields.io/badge/Npm-v6.14.10-%2300B98E?style=for-the-badge&logo=appveyor)
+![Badge](https://img.shields.io/badge/Deploy-Vercel-%23542F61?style=for-the-badge&logo=appveyor)
+![Badge](https://img.shields.io/apm/l/npm?style=for-the-badge)
 
-First, run the development server:
+
+## :dart: Objetivo
+
+Com a proposta de nos mostrar como nextjs funciona, a [Alura](https://www.alura.com.br/) propôs a criação de uma aplicação para aplicar os conceitos desse framework que vem ganhando muito espaço no mercado nos útimos dias.
+Foram 5 aulas do dia 25 ao 29, apresentando conceitos do React e Nextjs, como os instrutores trazendo sua visão de mercado e boas práticas.
+Sendo assim a ideia é construir um app de perguntas e respostas, o famigerado Quiz. O tema do projeto é livre, e decidi fazer um quiz sobre BTS, banda que vem se popularizando a cada dia. Assim dando um quiz divertido para os amantes de BTS.
+
+## :hammer_and_wrench: Ferramentas
+
+-   [Nextjs](https://nextjs.org/)
+-   [Styled Components](https://styled-components.com)
+-   [Styled Icons](https://styled-icons.js.org/)
+-   [Vercel](https://vercel.com)
+-   [Yarn](https://yarnpkg.com/)
+
+## :desktop_computer: Padronização de código
+
+-   [Eslint](https://eslint.org/)
+-   [Prettier](https://prettier.io/)
+-   [EditorConfig](https://editorconfig.org/)
+
+## :art: Animações
+
+-   [Lottie](https://lottiefiles.com/)
+-   [Motion](https://www.framer.com/motion/)
+
+## :rocket: Executando o projeto
 
 ```bash
-npm run dev
-# or
+git clone https://github.com/Matheus153/quizWithNext.git ou git@github.com:Matheus153/quizWithNext.git
+
+// Concluindo a instalação rode
+
+ cd quiz
+
+// Depois rode o comando
+
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Autor 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<img align="center" src="https://avatars1.githubusercontent.com/u/62727591?s=460&u=03f8868eec3f187e0c33d7311b5bca386c8419c7&v=4">
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### |Matheus Santos|
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## :eyeglasses: Demo em produção
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Link de acesso :dizzy:](https://quiz-srnovato.vercel.app/)
