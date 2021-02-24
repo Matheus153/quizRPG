@@ -2,6 +2,7 @@
 import React from 'react';
 import { Lottie } from '@crello/react-lottie';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/router'
 import db from '../../../db.json';
 import Widget from '../../components/Widget';
  
@@ -15,6 +16,9 @@ import loadingAnimation from './animations/Bts.json';
 import { ThemeConsumer } from 'styled-components';
 
 function ResultWidget({ results }) {
+
+  const router = useRouter()
+
   return (
     <Widget>
       <Widget.Header>
@@ -49,6 +53,10 @@ function ResultWidget({ results }) {
             </li>
           ))}
         </ul>
+
+        <Button type="button" onClick={() => router.push('/')}>
+						Jogar novamente
+				</Button>
       </Widget.Content>
     </Widget>
   );
