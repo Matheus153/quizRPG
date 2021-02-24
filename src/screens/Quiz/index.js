@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { Lottie } from '@crello/react-lottie';
+import { motion } from 'framer-motion';
 import db from '../../../db.json';
 import Widget from '../../components/Widget';
  
@@ -103,7 +104,15 @@ function QuestionWidget({
         }}
         src={question.image}
       />
-      <Widget.Content>
+      <Widget.Content
+      as={motion.section}
+      transition={{ delay: 0, duration: 0.5 }}
+      variants={{
+        show: { opacity: 1 },
+        hidden: { opacity: 0 },
+      }}
+      initial="hidden"
+      animate="show">
         <h3>
           {question.title}
         </h3>
@@ -123,29 +132,41 @@ function QuestionWidget({
             }, 3 * 1000);
           }}
         >
-          {question.alternatives.map((alternative, alternativeIndex) => {
-            const alternativeId = `alternative__${alternativeIndex}`;
-            const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
-            const isSelected = selectedAlternative === alternativeIndex;
-            return (
-              <Widget.Topic
-                as="label"
-                key={alternativeId}
-                htmlFor={alternativeId}
-                data-selected={isSelected}
-                data-status={isQuestionSubmited && alternativeStatus}
-              >
-                <input
-                  style={{ display: 'none' }}
-                  id={alternativeId}
-                  name={questionId}
-                  onChange={() => setSelectedAlternative(alternativeIndex)}
-                  type="radio"
-                />
-                {alternative}
-              </Widget.Topic>
-            );
-          })}
+          {question.alternatives.map(
+            (alternative, alternativeIndex) => {
+              const alternativeId = `alternative__${alternativeIndex}`;
+              const alternativeStatus = isCorrect 
+                ? 'SUCCESS' 
+                : 'ERROR';
+                
+              const isSelected = selectedAlternative === alternativeIndex;
+              return (
+                <Widget.Topic
+                  as={motion.label}
+                  transition={{
+                    delay:0.5,
+                    duration:0.3,
+                  }}
+                  variants={{
+                    show: { opacity: 1},
+                    hidden: { opacity: 0 },
+                  }}
+                  key={alternativeId}
+                  htmlFor={alternativeId}
+                  data-selected={isSelected}
+                  data-status={isQuestionSubmited && alternativeStatus}
+                >
+                  <input
+                    style={{ display: 'none' }}
+                    id={alternativeId}
+                    name={questionId}
+                    onChange={() => setSelectedAlternative(alternativeIndex)}
+                    type="radio"
+                  />
+                  {alternative}
+                </Widget.Topic>
+              );
+            })}
 
           {/* <pre>
             {JSON.stringify(question, null, 4)}
