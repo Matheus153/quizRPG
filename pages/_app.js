@@ -41,7 +41,7 @@ const { theme } = db;
 export default function App({ Component, pageProps }) {
   return (
     <>
- <Head>
+        <Head>
           <title>Quiz BTS</title>
           <link rel="icon" href="https://img.icons8.com/nolan/2x/bts-logo.png" />
         </Head>
