@@ -20,6 +20,7 @@ import { ThemeConsumer } from 'styled-components';
 function ResultWidget({ results }) {
 
   const router = useRouter()
+  const name = router.query.name 
 
   return (
     <Widget>
@@ -29,7 +30,7 @@ function ResultWidget({ results }) {
 
       <Widget.Content>
         <p>
-          Boa, você acertou
+          Boa {name}, você acertou
           {' '}
           {/* {results.reduce((somatoriaAtual, resultAtual) => {
             const isAcerto = resultAtual === true;
@@ -50,8 +51,8 @@ function ResultWidget({ results }) {
               {' '}
               Resultado:
               {result === true
-                ? 'Acertou'
-                : 'Errou'}
+                ? ' Acertou'
+                : ' Errou'}
             </li>
           ))}
         </ul>
@@ -158,13 +159,9 @@ function QuestionWidget({
                   htmlFor={alternativeId}
                   data-selected={isSelected}
                   data-status={isQuestionSubmited && alternativeStatus}
-                  whileHover={{ 
-                    scale: 1.05,
-                    transition: { duration: 0.05, ease: "easeOut"}
-                  }}
                   transition={{
                     delay:0.5,
-                    duration:0.3,
+                    duration:0.4,
                   }}
                   variants={{
                     show: { opacity: 1},
