@@ -21,6 +21,7 @@ function ResultWidget({ results }) {
 
   const router = useRouter()
   const name = router.query.name 
+  let score = results.filter((result) => result).length;
 
   return (
     <Widget>
@@ -30,18 +31,10 @@ function ResultWidget({ results }) {
 
       <Widget.Content>
         <h4>
-          Boa {name}, você acertou
-          {' '}
-          {/* {results.reduce((somatoriaAtual, resultAtual) => {
-            const isAcerto = resultAtual === true;
-            if (isAcerto) {
-              return somatoriaAtual + 1;
-            }
-            return somatoriaAtual;
-          }, 0)} */}
-          {results.filter((x) => x).length}
-          {' '}
-          perguntas
+          { score > 3 && `Boa ${name}, você acertou ${score} perguntas`}
+          {score <= 3 &&
+							`Ops!! Apenas ${score} perguntas, tenho certeza que na próxima se sairá melhor! :)`}
+          
         </h4>
         <ul>
           {results.map((result, index) => (
