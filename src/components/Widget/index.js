@@ -52,6 +52,7 @@ Widget.Content = styled.div`
     list-style: none;
     padding: 0;
   }
+
 `;
 
 Widget.Topic = styled.a`

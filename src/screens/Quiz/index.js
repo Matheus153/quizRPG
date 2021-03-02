@@ -25,11 +25,11 @@ function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
-        Tela de Resultado:
+        <h4>Tela de Resultado:</h4>
       </Widget.Header>
 
       <Widget.Content>
-        <p>
+        <h4>
           Boa {name}, você acertou
           {' '}
           {/* {results.reduce((somatoriaAtual, resultAtual) => {
@@ -42,7 +42,7 @@ function ResultWidget({ results }) {
           {results.filter((x) => x).length}
           {' '}
           perguntas
-        </p>
+        </h4>
         <ul>
           {results.map((result, index) => (
             <li key={`result__${index}`}>
