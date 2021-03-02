@@ -45,14 +45,14 @@ export default function Home() {
         </Head>
         <StyledContainer>
           <Widget
-          as={motion.section}
-          transition={{ delay: 0.1, duration: 0.55 }}
-          variants={{
-            show: { opacity: 1, y: '0' },
-            hidden: { opacity: 0, y: '100%'}
-          }}
-          initial="hidden"
-          animate="show"
+           as={motion.section}
+           transition={{ delay: 0, duration: 0.5, ease: "easeOut" }}
+           variants={{
+             show: {opacity: 1, y:'0'},
+             hidden: {opacity: 0, y:'50%'}
+           }}
+           initial="hidden"
+           animate="show"
           >
           <Widget.Header>
             <h1>{db.title}</h1>
