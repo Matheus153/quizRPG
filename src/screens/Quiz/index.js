@@ -12,6 +12,8 @@ import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
 
+import correctAnim from './animations/correctAnim';
+import incorrectAnim from './animations/incorrectAnim';
 import loadingAnimation from './animations/Bts.json';
 import { ThemeConsumer } from 'styled-components';
 
@@ -151,6 +153,15 @@ function QuestionWidget({
               return (
                 <Widget.Topic
                   as={motion.label}
+                  
+                  key={alternativeId}
+                  htmlFor={alternativeId}
+                  data-selected={isSelected}
+                  data-status={isQuestionSubmited && alternativeStatus}
+                  whileHover={{ 
+                    scale: 1.05,
+                    transition: { duration: 0.05, ease: "easeOut"}
+                  }}
                   transition={{
                     delay:0.5,
                     duration:0.3,
@@ -159,10 +170,6 @@ function QuestionWidget({
                     show: { opacity: 1},
                     hidden: { opacity: 0 },
                   }}
-                  key={alternativeId}
-                  htmlFor={alternativeId}
-                  data-selected={isSelected}
-                  data-status={isQuestionSubmited && alternativeStatus}
                 >
                   <input
                     style={{ display: 'none' }}
@@ -179,11 +186,23 @@ function QuestionWidget({
           {/* <pre>
             {JSON.stringify(question, null, 4)}
           </pre> */}
-          <Button type="submit" disabled={!hasAlternativeSelected}>
-            Confirmar
-          </Button>
-          {isQuestionSubmited && isCorrect && <p>Boa, acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Que pena.</p>}
+          {!isQuestionSubmited &&
+            <Button 
+              type="submit" 
+              disabled={!hasAlternativeSelected}
+              as={motion.button}
+              whileHover={{ 
+                scale: 1.05,
+                transition: { duration: 0.05}
+              }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Confirmar
+            </Button>
+          }
+
+          {isQuestionSubmited && isCorrect && <Lottie config={{ animationData: correctAnim, loop: false, autoplay: true }} height={60} width={60} margin-top="10px" />}
+          {isQuestionSubmited && !isCorrect && <Lottie config={{ animationData: incorrectAnim, loop: false, autoplay: true }} height={60} width={60} margin-top="10px" />}
         </AlternativesForm>
       </Widget.Content>
     </Widget>
