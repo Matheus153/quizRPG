@@ -46,10 +46,10 @@ export default function Home() {
         <StyledContainer>
           <Widget
            as={motion.section}
-           transition={{ delay: 0, duration: 0.5, ease: "easeOut" }}
+           transition={{ delay: 0.1, duration: 0.5, ease: "easeOut" }}
            variants={{
              show: {opacity: 1, y:'0'},
-             hidden: {opacity: 0, y:'50%'}
+             hidden: {opacity: 0, y:'55%'}
            }}
            initial="hidden"
            animate="show"

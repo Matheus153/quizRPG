@@ -99,13 +99,13 @@ function QuestionWidget({
 
   return (
     <Widget  as={motion.section}
-    transition={{ delay: 0, duration: 0.5, ease: "easeOut" }}
-    variants={{
-      show: {opacity: 1, y:'0'},
-      hidden: {opacity: 0, y:'25%'}
-    }}
-    initial="hidden"
-    animate="show">
+      transition={{ delay: 0, duration: 0.5, ease: "easeOut" }}
+      variants={{
+        show: {opacity: 1, y:'0'},
+        hidden: {opacity: 0, y:'25%'}
+      }}
+      initial="hidden"
+      animate="show">
       <Widget.Header>
         <BackLinkArrow href="/" />
         <h3>
