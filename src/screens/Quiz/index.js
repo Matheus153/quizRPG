@@ -9,6 +9,7 @@ import Widget from '../../components/Widget';
 import QuizBackground from '../../components/quizBackground';
 import QuizContainer from '../../components/QuizContainer';
 import AlternativesForm from '../../components/AlternativesForm';
+import AlternativeMessage from '../../components/AlternativeMessage';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
 
@@ -199,8 +200,8 @@ function QuestionWidget({
             </Button>
           }
 
-          {isQuestionSubmited && isCorrect && <Lottie config={{ animationData: correctAnim, loop: false, autoplay: true }} height={60} width={60} margin-top="10px" />}
-          {isQuestionSubmited && !isCorrect && <Lottie config={{ animationData: incorrectAnim, loop: false, autoplay: true }} height={60} width={60} margin-top="10px" />}
+          {isQuestionSubmited && isCorrect && <AlternativeMessage><Lottie config={{ animationData: correctAnim, loop: false, autoplay: true }} height={60} width={60} margin-top="10px"/></AlternativeMessage>}
+          {isQuestionSubmited && !isCorrect && <AlternativeMessage><Lottie config={{ animationData: incorrectAnim, loop: false, autoplay: true }} height={60} width={60} margin-top="10px" /></AlternativeMessage>}
         </AlternativesForm>
       </Widget.Content>
     </Widget>
