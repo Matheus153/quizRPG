@@ -20,6 +20,7 @@ const Widget = styled.div`
 
   h4 {
     font-size: 1.3em;
+    text-align: center;
   }
 
   h5 {
