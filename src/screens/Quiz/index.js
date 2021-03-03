@@ -27,17 +27,31 @@ function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
-        <h4>Tela de Resultado:</h4>
+        <h4>Resultado:</h4>
       </Widget.Header>
-
-      <Widget.Content>
-        <h5>
-          { score > 3 && `Boa ${name}, você acertou ${score} perguntas`}
+          <img
+          alt="final"
+          style={{
+            width: '100%',
+            height: '180px',
+            objectFit: 'cover',
+          }}
+          src={db.resultImage}
+          />
+      <Widget.Content> 
+         
+        <h5 style= {{
+          marginBottom: '25px',
+          lineHeight: '1.1em',
+          textAlign: 'center'
+        }}>
+          { score > 3 && `Boa ${name}, você acertou ${score} de 8 perguntas e provou que realmente manja de BTS`}
           {score <= 3 &&
-							`Ops!! Apenas ${score} perguntas, tenho certeza que na próxima se sairá melhor! :)`}
+							`Ops!! Apenas ${score} de 8 perguntas, tenho certeza que na próxima se sairá melhor! :)`}
           
         </h5>
-        <ul>
+        
+        {/* <ul>
           {results.map((result, index) => (
             <li key={`result__${index}`}>
               # 
@@ -49,7 +63,7 @@ function ResultWidget({ results }) {
                 : ' Poxa, vacilou'}
             </li>
           ))}
-        </ul>
+        </ul> */}
 
         <Button type="button" onClick={() => router.push('/')}>
 						Jogar novamente
