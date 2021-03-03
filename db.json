@@ -30,7 +30,7 @@
         ]
       },
       {
-        "image": "jungkook-bts.jpg",
+        "image": "jungkook-bts.gif",
         "title": "Qual o membro mais novo da banda?",
         "description": "Fácil não?",
         "answer": 4,
@@ -97,7 +97,7 @@
       {
         "image": "no-more-dream.gif",
         "title": "Qual foi a primeira música do BTS?",
-        "description": "Última.",
+        "description": "Última pergunta.",
         "answer": 1,
         "alternatives": [
           "Fale love",
