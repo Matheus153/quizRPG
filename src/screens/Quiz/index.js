@@ -45,7 +45,7 @@ function ResultWidget({ results }) {
               Resultado:
               {result === true
                 ? ' Mandou bem!'
-                : ' Vacilou'}
+                : ' Poxa, vacilou'}
             </li>
           ))}
         </ul>
