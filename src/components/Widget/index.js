@@ -17,10 +17,21 @@ const Widget = styled.div`
     line-height: 1;
     margin-bottom: 0;
   }
+
+  h4 {
+    font-size: 1.3em;
+  }
+
+  h5 {
+    font-size: 1.1em;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+
   p {
     font-size: 14px;
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.5em;
   }
 `;
 

@@ -30,12 +30,12 @@ function ResultWidget({ results }) {
       </Widget.Header>
 
       <Widget.Content>
-        <h4>
+        <h5>
           { score > 3 && `Boa ${name}, você acertou ${score} perguntas`}
           {score <= 3 &&
 							`Ops!! Apenas ${score} perguntas, tenho certeza que na próxima se sairá melhor! :)`}
           
-        </h4>
+        </h5>
         <ul>
           {results.map((result, index) => (
             <li key={`result__${index}`}>
@@ -44,8 +44,8 @@ function ResultWidget({ results }) {
               {' '}
               Resultado:
               {result === true
-                ? ' Acertou'
-                : ' Errou'}
+                ? ' Mandou bem!'
+                : ' Vacilou'}
             </li>
           ))}
         </ul>
@@ -62,7 +62,7 @@ function LoadingWidget() {
   return (
     <Widget>
       <Widget.Header>
-        Carregando...
+        <h5>carregando...</h5>
       </Widget.Header>
 
       <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
@@ -174,6 +174,7 @@ function QuestionWidget({
                     name={questionId}
                     onChange={() => setSelectedAlternative(alternativeIndex)}
                     type="radio"
+                    checked={selectedAlternative === alternativeIndex}
                   />
                   {alternative}
                 </Widget.Topic>
