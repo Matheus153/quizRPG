@@ -6,7 +6,7 @@
     "description": "Um quiz rápido sobre BTS",
     "questions": [
       {
-        "image": "http://p.favim.com/orig/2019/02/12/bts-bulletproof-boy-scouts-gif-Favim.com-6891375.gif",
+        "image": "bts-screen.jpg",
         "title": "Em que ano foi criada a banda BTS?",
         "description": "Pergunta fácil em!",
         "answer": 1,
@@ -30,7 +30,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/bpTutlpHCXsPQbHUMV/giphy.gif",
+        "image": "jungkook-bts.gif",
         "title": "Qual o membro mais novo da banda?",
         "description": "Fácil não?",
         "answer": 4,
@@ -43,7 +43,7 @@
         ]
       },
       {
-        "image": "https://data.whicdn.com/images/329081289/original.gif",
+        "image": "dance-bts.gif",
         "title": "Qual foi o membro SURPRESA (que não havia sido divulgado antes do debut)?",
         "description": "Essa é difícil!",
         "answer": 2,
@@ -56,7 +56,7 @@
       },
 
       {
-        "image": "https://pa1.narvii.com/6830/c7ee0d4e32ae388f6bdf0e2162b3f31d10cb6c97_hq.gif",
+        "image": "show-bts.gif",
         "title": "Qual está errado?",
         "description": "Consegue essa?",
         "answer": 2,
@@ -69,7 +69,7 @@
       },
 
       {
-        "image": "https://data.whicdn.com/images/318152273/original.gif",
+        "image": "j-hope.gif",
         "title": "Qual o membro considerado como o melhor dançarino?",
         "description": "Essa você sabe!",
         "answer": 2,
@@ -82,7 +82,7 @@
       },
 
       {
-        "image": "https://thumbs.gfycat.com/AcidicAgitatedDassierat-small.gif",
+        "image": "V-bts.gif",
         "title": "Qual foi o membro que participou de um concurso de Drag Queen?",
         "description": "Tens o que é necessário?",
         "answer": 0,
@@ -95,7 +95,7 @@
       },
 
       {
-        "image": "https://i.gifer.com/FyB6.gif",
+        "image": "no-more-dream.gif",
         "title": "Qual foi a primeira música do BTS?",
         "description": "Última.",
         "answer": 1,
