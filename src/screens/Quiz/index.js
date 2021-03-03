@@ -200,8 +200,8 @@ function QuestionWidget({
             </Button>
           }
 
-          {isQuestionSubmited && isCorrect && <AlternativeMessage><Lottie config={{ animationData: correctAnim, loop: false, autoplay: true }} height={60} width={60} margin-top="10px"/></AlternativeMessage>}
-          {isQuestionSubmited && !isCorrect && <AlternativeMessage><Lottie config={{ animationData: incorrectAnim, loop: false, autoplay: true }} height={60} width={60} margin-top="10px" /></AlternativeMessage>}
+          {isQuestionSubmited && isCorrect && <AlternativeMessage><Lottie config={{ animationData: correctAnim, loop: false, autoplay: true }} height={70} width={70} margin-top="20px"/></AlternativeMessage>}
+          {isQuestionSubmited && !isCorrect && <AlternativeMessage><Lottie config={{ animationData: incorrectAnim, loop: false, autoplay: true }} height={70} width={70} margin-top="20px" /></AlternativeMessage>}
         </AlternativesForm>
       </Widget.Content>
     </Widget>
