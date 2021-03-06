@@ -10,6 +10,7 @@
         "title": "Em que ano foi criada a banda BTS?",
         "description": "Pergunta fácil em!",
         "answer": 1,
+        "correct": "correta: 2013",
         "alternatives": [
           "2010",
           "2013",
@@ -22,6 +23,7 @@
         "title": "Qual foi o Álbum de maior sucesso?",
         "description": "E agora? Você sabe?",
         "answer": 0,
+        "correct": "correta: Mape of the Soul",
         "alternatives": [
           "Map of the Soul",
           "Dark & Wild",
@@ -34,6 +36,7 @@
         "title": "Qual o membro mais novo da banda?",
         "description": "Fácil não?",
         "answer": 4,
+        "correct": "correta: Jungkook",
         "alternatives": [
           "RM",
           "Jimin",
@@ -47,6 +50,7 @@
         "title": "Qual foi o membro SURPRESA (que não havia sido divulgado antes do debut)?",
         "description": "Essa é difícil!",
         "answer": 2,
+        "correct": "correta: V",
         "alternatives": [
           "Jin",
           "Jimin",
@@ -60,6 +64,7 @@
         "title": "Qual está errado?",
         "description": "Consegue essa?",
         "answer": 2,
+        "correct": "correta: JK - Nasceu em Gwangju",
         "alternatives": [
           "V - nasceu em Daegu",
           "Real Me - nasceu em Ilsan",
@@ -73,6 +78,7 @@
         "title": "Qual o membro considerado como o melhor dançarino?",
         "description": "Essa você sabe!",
         "answer": 2,
+        "correct": "correta: J-Hope",
         "alternatives": [
           "Jungkook",
           "Suga",
@@ -86,6 +92,7 @@
         "title": "Qual foi o membro que participou de um concurso de Drag Queen?",
         "description": "Tens o que é necessário?",
         "answer": 0,
+        "correct": "correta: V",
         "alternatives": [
           "V",
           "Real Me",
@@ -99,6 +106,7 @@
         "title": "Qual foi a primeira música do BTS?",
         "description": "Última pergunta.",
         "answer": 1,
+        "correct": "correta: No more dream",
         "alternatives": [
           "Fake love",
           "No more dream",
