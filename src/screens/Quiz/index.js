@@ -36,7 +36,7 @@ function ResultWidget({ results }) {
       <Widget.Header>
         <h4>Resultado:</h4>
       </Widget.Header>
-          <img
+          {score > 3 && <img
           alt="final"
           style={{
             width: '100%',
@@ -44,7 +44,17 @@ function ResultWidget({ results }) {
             objectFit: 'cover',
           }}
           src={db.resultImage}
-          />
+          /> }
+
+          {score <=3 && <img
+          alt="final"
+          style={{
+            width: '100%',
+            height: '180px',
+            objectFit: 'cover',
+          }}
+          src={db.resultImage2st}
+          /> }
       <Widget.Content> 
          
         <h5 style= {{
