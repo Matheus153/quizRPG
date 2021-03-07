@@ -231,8 +231,8 @@ function QuestionWidget({
             </Button>
           }
 
-          {isQuestionSubmited && isCorrect && <AlternativeMessage><Lottie config={{ animationData: correctAnim, loop: false, autoplay: true }} height={70} width={70} margin-top="20px"/></AlternativeMessage>}
-          {isQuestionSubmited && !isCorrect && <AlternativeMessage><Lottie config={{ animationData: incorrectAnim, loop: false, autoplay: true }} height={70} width={70} margin-top="20px"/>
+          {isQuestionSubmited && isCorrect && <AlternativeMessage><Lottie config={{ animationData: correctAnim, loop: false, autoplay: true }} height={90} width={90} margin-top="20px"/></AlternativeMessage>}
+          {isQuestionSubmited && !isCorrect && <AlternativeMessage><Lottie config={{ animationData: incorrectAnim, loop: false, autoplay: true }} height={80} width={80} margin-top="20px"/>
           <p as={motion.p}  transition={{ delay: 0.4, duration: 1, ease: "easeOut" }}>{question.correct}</p></AlternativeMessage>}
         </AlternativesForm>
       </Widget.Content>
