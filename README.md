@@ -43,10 +43,6 @@ git clone https://github.com/Matheus153/quizWithNext.git ou git@github.com:Mathe
 
 // Concluindo a instalação rode
 
- cd quiz
-
-// Depois rode o comando
-
 yarn dev
 ```
 
