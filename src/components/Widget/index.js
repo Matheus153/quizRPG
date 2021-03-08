@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
-  border: 1px solid rgba(31, 29, 29, 0.8); 
+  border: .5px solid ${({ theme }) => theme.colors.secondary}; 
   background-color: rgba(31, 29, 29, 0.93);
   box-shadow: -11px 11px 21px -4px rgba(0,0,0,0.75);
   -webkit-box-shadow: -11px 11px 21px -4px rgba(0,0,0,0.75);
