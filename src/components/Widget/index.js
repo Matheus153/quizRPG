@@ -18,6 +18,10 @@ const Widget = styled.div`
     margin-bottom: 0;
   }
 
+  h1 {
+    text-align: center;
+  }
+
   h4 {
     font-size: 1.3em;
     text-align: center;

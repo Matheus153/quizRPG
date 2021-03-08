@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const QuizBackground = styled.div`
   width: 100%;
@@ -9,7 +10,6 @@ const QuizBackground = styled.div`
   background-color: ${({ theme }) => theme.colors.mainBg};
   flex: 1;
   @media screen and (max-width: 500px) {
-    background-image: url('https://wallpaper.dog/large/10821108.jpg');
     &:after {
       content: "";
       display: block;

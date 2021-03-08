@@ -13,10 +13,13 @@ import AlternativeMessage from '../../components/AlternativeMessage';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
 
-import correctAnim from './animations/correctAnim';
-import incorrectAnim from './animations/incorrectAnim';
-import loadingAnimation from './animations/Bts.json';
+import correctAnim from './animations/right.json';
+import incorrectAnim from './animations/error.json';
+import loadingAnimation from './animations/load.json';
 import { ThemeConsumer } from 'styled-components';
+
+import Right from '../../assets/audio/right.mp3'
+import Wrong from '../../assets/audio/wrong.mp3'
 
 function ResultWidget({ results }) {
 
@@ -122,6 +125,8 @@ function QuestionWidget({
   const isCorrect = selectedAlternative === question.answer;
   const hasAlternativeSelected = selectedAlternative !== undefined;
 
+  const audioTrack = React.useRef();
+
   return (
     <Widget  as={motion.section}
       transition={{ delay: 0, duration: 0.5, ease: "easeOut" }}
@@ -167,6 +172,11 @@ function QuestionWidget({
           onSubmit={(infosDoEvento) => {
             infosDoEvento.preventDefault();
             setIsQuestionSubmited(true);
+
+            if (audioTrack.current) {
+              audioTrack.current.play();
+            }
+
             setTimeout(() => {
               addResult(isCorrect);
               onSubmit();
@@ -213,6 +223,12 @@ function QuestionWidget({
               );
             })}
 
+          <audio
+            ref={audioTrack}
+            src={isCorrect ? Right : Wrong}
+            preload="auto"
+          />
+
           {/* <pre>
             {JSON.stringify(question, null, 4)}
           </pre> */}
@@ -232,7 +248,7 @@ function QuestionWidget({
           }
 
           {isQuestionSubmited && isCorrect && <AlternativeMessage><Lottie config={{ animationData: correctAnim, loop: false, autoplay: true }} height={70} width={70} margin-top="20px"/></AlternativeMessage>}
-          {isQuestionSubmited && !isCorrect && <AlternativeMessage><Lottie config={{ animationData: incorrectAnim, loop: false, autoplay: true }} height={70} width={70} margin-top="20px"/>
+          {isQuestionSubmited && !isCorrect && <AlternativeMessage><Lottie config={{ animationData: incorrectAnim, loop: false, autoplay: true }} height={50} width={50} margin-top="20px"/>
           <p as={motion.p}  transition={{ delay: 0.4, duration: 1, ease: "easeOut" }}>{question.correct}</p></AlternativeMessage>}
         </AlternativesForm>
       </Widget.Content>
@@ -286,7 +302,7 @@ export default function QuizPage({ externalQuestions, externalBg }) {
   return (
     <QuizBackground backgroundImage={bg}>
       <QuizContainer>
-        <img src={db.theme.quizlogo} width="120px" margin="auto" />
+        <img src={db.theme.quizlogo2} width="100px" margin="auto" />
         {screenState === screenStates.QUIZ && (
           <QuestionWidget
             question={question}

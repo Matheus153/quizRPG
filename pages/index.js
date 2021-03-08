@@ -37,11 +37,10 @@ export default function Home() {
   const [name, setName] = React.useState('')
 
   return (
-    <QuizBackground backgroundImage={db.bg1}>
+    <QuizBackground backgroundImage={db.bg}>
       
         <Head>
-          <title>Quiz BTS</title>
-          <link rel="icon" href="https://img.icons8.com/nolan/2x/bts-logo.png" />
+          <title>Você sobreviveria em um rpg?</title>
         </Head>
         <StyledContainer>
           <Widget

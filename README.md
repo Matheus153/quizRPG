@@ -1,5 +1,4 @@
 <div align="center">
-	<img src="public/banner-bts.png" with="400"/>
 	<h1>Quiz</h1>
 </div>
 
@@ -16,7 +15,7 @@
 
 Com a proposta de nos mostrar como nextjs funciona, a [Alura](https://www.alura.com.br/) propôs a criação de uma aplicação para aplicar os conceitos desse framework que vem ganhando muito espaço no mercado nos útimos dias.
 Foram 5 aulas do dia 25 ao 29, apresentando conceitos do React e Nextjs, como os instrutores trazendo sua visão de mercado e boas práticas.
-Sendo assim a ideia é construir um app de perguntas e respostas, o famigerado Quiz. O tema do projeto é livre, e decidi fazer um quiz sobre BTS, banda que vem se popularizando a cada dia. Assim dando um quiz divertido para os amantes de BTS.
+Sendo assim a ideia é construir um app de perguntas e respostas, o famigerado Quiz. O tema do projeto é livre, e decidi fazer um quiz sobre RPG, banda que vem se popularizando a cada dia. Assim dando um quiz divertido para os amantes de RPG.
 
 ## :hammer_and_wrench: Ferramentas
 
