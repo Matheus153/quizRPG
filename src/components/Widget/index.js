@@ -45,7 +45,8 @@ Widget.Header = styled.header`
   width: 100%;
   border-radius: ${({ theme }) => theme.borderRadius};
   text-shadow: -2px 2px 1px rgba(10, 10, 10, .8);
-  
+  text-align: center;
+  line-height: 1.4em;
   
   * {
     margin: 0;
