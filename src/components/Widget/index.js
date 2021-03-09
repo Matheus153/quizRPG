@@ -23,8 +23,9 @@ const Widget = styled.div`
   }
 
   h4 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     text-align: center;
+    line-height: 1.2em
   }
 
   h5 {
@@ -34,6 +35,8 @@ const Widget = styled.div`
   }
 
   p {
+    margin-top: -20px;
+    margin-bottom: 30px;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5em;

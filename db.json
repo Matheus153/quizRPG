@@ -4,84 +4,83 @@
     "description": "Um quiz rápido!",
     "questions": [
       {
-        "image": "rpg.png",
-        "title": "Em que ano foi criada a banda BTS?",
+        "image": "goblin.jpeg",
+        "title": "Se você estivesse numa caverna cercado por goblins. Quais armas seriam mais úteis?",
         "description": "Pergunta fácil em!",
-        "answer": 1,
-        "correct": "correta: 2013",
+        "answer": 2,
+        "correct": "correta: Espada curta e um escudo",
         "alternatives": [
-          "2010",
-          "2013",
-          "2012",
-          "2015"
+          "Lança e escudo",
+          "Machado e azagaia",
+          "Espada curta e um escudo",
+          "Só na mão mesmo"
         ]
       },
       {
         "image": "camp.gif",
-        "title": "Qual foi o Álbum de maior sucesso?",
-        "description": "E agora? Você sabe?",
+        "title": "Você está em um campo aberto, sua constituição é baixa. Qual a melhor maneira de evitar danos críticos?",
+        "description": "Vai na fé.",
         "answer": 0,
-        "correct": "correta: Mape of the Soul",
+        "correct": "correta: Usar uma armadura decente",
         "alternatives": [
-          "Map of the Soul",
-          "Dark & Wild",
-          "Love Yourself: Tear",
-          "Wings"
+          "Usar uma armadura decente",
+          "Depender da sua destreza",
+          "Ficar atrás dos seus colegas dando apenas suporte",
+          "Pegar distância e somente usar armas com longo alcance"
         ]
       },
       {
         "image": "finnJackie.gif",
-        "title": "Qual o membro mais novo da banda?",
-        "description": "Fácil não?",
-        "answer": 4,
-        "correct": "correta: Jungkook",
+        "title": "Qual dessas classes seria mais útil em furtos de objetos amaldiçoados?",
+        "description": "Ótima dica!",
+        "answer": 3,
+        "correct": "correta: Bruxo",
         "alternatives": [
-          "RM",
-          "Jimin",
-          "Suga",
-          "Jin",
-          "Jungkook"
+          "Mago",
+          "Druida",
+          "Ladino",
+          "Bruxo"
         ]
       },
       {
         "image": "goblin.gif",
-        "title": "Qual foi o membro SURPRESA (que não havia sido divulgado antes do debut)?",
-        "description": "Essa é difícil!",
+        "title": "Sua missão é o resgate de uma princesa. Qual desses você escolheria para o acompanhar na sua jornada?",
+        "description": "Hum",
         "answer": 2,
-        "correct": "correta: V",
+        "correct": "correta: Elfo e Ladino",
         "alternatives": [
-          "Jin",
-          "Jimin",
-          "V",
-          "Suga"
+          "Clérigo e Bruxo",
+          "Bárbaro e um Anão",
+          "Elfo e Ladino",
+          "Paladino e Patrulheiro"
         ]
       },
 
       {
-        "image": "show-bts.gif",
+        "image": "rpg.png",
         "title": "Qual está errado?",
-        "description": "Consegue essa?",
-        "answer": 2,
-        "correct": "correta: JK - Nasceu em Gwangju",
+        "description": "Soka...",
+        "answer": 3,
+        "correct": "correta: Confiar seus objetos pessoais a um ladino",
         "alternatives": [
-          "V - nasceu em Daegu",
-          "Real Me - nasceu em Ilsan",
-          "Jk - nasceu em Gwangju",
-          "Jin - nasceu em Gwancheon"
+          "Seguir os conselhos de um viajantes",
+          "Aceitar os presentes de um dráconito",
+          "Seguir as dicas do mestre do jogo",
+          "Confiar seus objetos pessoais a um ladino"
         ]
       },
 
       {
-        "image": "j-hope.gif",
-        "title": "Qual o membro considerado como o melhor dançarino?",
-        "description": "Essa você sabe!",
-        "answer": 2,
-        "correct": "correta: J-Hope",
+        "image": "goblin-slayer.jpg",
+        "title": "Você está numa batalha. Qual desses deve-se evitar em combate a curta distância?",
+        "description": "Esse você realmente não deve!",
+        "answer": 0,
+        "correct": "correta: Hobgoblins",
         "alternatives": [
-          "Jungkook",
-          "Suga",
-          "J-Hope",
-          "Real Me"      
+          "Hobgoblins",
+          "Esqueletos",
+          "Goblins",
+          "Necromantes"      
         ]
       },
 

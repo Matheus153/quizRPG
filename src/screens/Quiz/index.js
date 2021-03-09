@@ -161,9 +161,9 @@ function QuestionWidget({
       }}
       initial="hidden"
       animate="show">
-        <h3>
+        <h4>
           {question.title}
-        </h3>
+        </h4>
         <p>
           {question.description}
         </p>

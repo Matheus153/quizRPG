@@ -7,7 +7,7 @@ const AlternativeMessage = styled.div`
     margin-top: 25px;
 
     p {
-        margin-left: 20px;
+        margin: 10px 0 0 20px;
         line-height: 1.2em;
         font-size: 16px;
     }
