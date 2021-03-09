@@ -44,7 +44,7 @@
       },
       {
         "image": "goblin.gif",
-        "title": "Sua missão é o resgate de uma princesa. Qual desses você escolheria para o acompanhar na sua jornada?",
+        "title": "Sua missão é o resgate de uma princesa. Quais desses você escolheria para o acompanhar na sua jornada?",
         "description": "Hum",
         "answer": 2,
         "correct": "correta: Elfo e Ladino",
