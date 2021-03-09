@@ -57,6 +57,15 @@ export default function Home() {
             <h1>{db.title}</h1>
           </Widget.Header>
 
+          <img src={"principal.jpg"} 
+           style={{
+            width: '100%',
+            height: '150px',
+            objectFit: 'cover',
+            marginTop: '20px'
+          }}
+          alt="principal"/>
+
           <Widget.Content>
             <form onSubmit= {function(infosDoEvento) {
                 infosDoEvento.preventDefault()
