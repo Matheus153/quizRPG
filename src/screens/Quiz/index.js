@@ -77,7 +77,7 @@ function ResultWidget({ results }) {
         }}>
           { score >= 8 && `Boa ${name}, você provou que realmente é um sobrevivente e provavelmente vai voar bastante nessa jornada.`}
           { score > 3 && score < 8 && `Você está com um ferimento exposto, risco de gangrena. Você vai sobreviver? Não sabemos.`}
-          {score <= 3 && `Opa!! Apenas ${score} você acabou perdendo seus membros e foi morto por fogo amigo com um forte dilaceração de orgão internos.`}
+          {score <= 3 && `Opa!! Você acabou perdendo seus membros e foi morto por fogo amigo com uma forte dilaceração de orgão internos, morrendo em agonia intensa.`}
           
         </h5>
         
