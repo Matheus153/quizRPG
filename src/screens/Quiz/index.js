@@ -39,7 +39,7 @@ function ResultWidget({ results }) {
       <Widget.Header>
         <h4>Resultado:</h4>
       </Widget.Header>
-          {score > 3 && <img
+          {score >= 8 && <img
           alt="final"
           style={{
             width: '100%',
@@ -49,7 +49,7 @@ function ResultWidget({ results }) {
           src={db.resultImage}
           /> }
 
-          {score <=3 && <img
+          {score > 3 && score < 8 && <img
           alt="final"
           style={{
             width: '100%',
@@ -58,6 +58,16 @@ function ResultWidget({ results }) {
           }}
           src={db.resultImage2st}
           /> }
+
+        {score <=3 && <img
+          alt="final"
+          style={{
+            width: '100%',
+            height: '180px',
+            objectFit: 'cover',
+          }}
+          src={db.resultImage3st}
+          /> }
       <Widget.Content> 
          
         <h5 style= {{
@@ -65,9 +75,9 @@ function ResultWidget({ results }) {
           lineHeight: '1.1em',
           textAlign: 'center'
         }}>
-          { score > 3 && `Boa ${name}, você acertou ${score} de 8 perguntas e provou que realmente manja de BTS`}
-          {score <= 3 &&
-							`Ops!! Apenas ${score} de 8 perguntas, tenho certeza que na próxima se sairá melhor! :)`}
+          { score >= 8 && `Boa ${name}, você provou que realmente é um sobrevivente e provavelmente vai voar bastante nessa jornada.`}
+          { score > 3 && score < 8 && `Você está com um ferimento exposto, risco de gangrena. Você vai sobreviver? Não sabemos.`}
+          {score <= 3 && `Opa!! Apenas ${score} você acabou perdendo seus membros e foi morto por fogo amigo com um forte dilaceração de orgão internos.`}
           
         </h5>
         
