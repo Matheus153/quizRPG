@@ -1,5 +1,6 @@
 <div align="center">
-	<h1>Quiz</h1>
+	<img src="public/banner-rpg.jpg" width="400"/>
+    <h1>Quiz</h1>
 </div>
 
 ![Badge](https://img.shields.io/badge/Quiz-CDZ-%23542F61?style=for-the-badge&logo=appveyor)
