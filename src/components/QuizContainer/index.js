@@ -11,6 +11,7 @@ const QuizContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
   @media screen and (max-width: 500px) {
     margin: auto;
     padding: 15px;
