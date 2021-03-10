@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="public/banner-bts.png" with="400"/>
+	<img src="public/banner-bts.jpg" width="400"/>
 	<h1>Quiz</h1>
 </div>
 
