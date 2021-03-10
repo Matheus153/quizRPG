@@ -24,7 +24,7 @@ const Widget = styled.div`
 
   h4 {
     font-size: 1.5em;
-    text-align: center;
+    text-align: justify;
     line-height: 1.2em
   }
 
