@@ -1,4 +1,3 @@
-// src/components/GitHubCorner/index.js
 import React from 'react';
 import styled from 'styled-components';
 
@@ -8,7 +7,6 @@ const Wrapper = styled.div`
   border: 0;
   right: 0;
   z-index: 20;
-  
 `;
 
 const SVGWrapper = styled.svg`
@@ -34,9 +32,9 @@ const SVGWrapper = styled.svg`
 `;
 
 // eslint-disable-next-line react/prop-types
-export default function GitHubCorner({ projectUrl }) {
+export default function GitHubCorner({ projectUrl, ...props }) {
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <a href={projectUrl} target="_blank" rel="noreferrer">
         <SVGWrapper className="githubCorner" width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
           <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z" />
