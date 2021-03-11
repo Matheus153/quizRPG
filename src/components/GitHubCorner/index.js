@@ -18,7 +18,7 @@ const SVGWrapper = styled.svg`
   }
   @keyframes octocat-wave{
     0%,100%{transform:rotate(0)}
-    20%,60%{transform:rotate(0deg)}
+    20%,60%{transform:rotate(-25deg)}
     40%,80%{transform:rotate(10deg)}
   }
   @media (max-width:500px){
