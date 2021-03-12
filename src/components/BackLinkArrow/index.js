@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import Link from '../Link';
 
 const StyledLink = styled(Link)`
-  margin-right: 18px;
   transition: .3s;
   &:hover {
     opacity: .5;
