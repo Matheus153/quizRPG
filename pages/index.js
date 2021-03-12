@@ -40,7 +40,7 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg1}>
       
         <Head>
-          <title>Quiz BTS</title>
+          <title>Você conhece o BTS?</title>
           <link rel="icon" href="https://img.icons8.com/nolan/2x/bts-logo.png" />
         </Head>
         <StyledContainer>
