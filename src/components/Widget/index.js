@@ -12,7 +12,7 @@ const Widget = styled.div`
   overflow: hidden;
 
   h1, h2, h3 {
-    font-size: 1.7em;
+    font-size: 1.6em;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
@@ -23,8 +23,8 @@ const Widget = styled.div`
   }
 
   h4 {
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 1.4em;
+
     line-height: 1.2em
   }
 
