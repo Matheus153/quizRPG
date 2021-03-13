@@ -58,7 +58,7 @@
 
       {
         "image": "rpg.png",
-        "title": "Qual está errado?",
+        "title": "Qual destas está errada?",
         "description": "Soka...",
         "answer": 3,
         "correct": "correta: Confiar seus objetos pessoais a um ladino",
