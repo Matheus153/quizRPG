@@ -36,7 +36,7 @@ function ResultWidget({ results }) {
       <Widget.Header>
         <h4>Resultado:</h4>
       </Widget.Header>
-          {score > 3 && <img
+          {score >= 6 && <img
           alt="final"
           style={{
             width: '100%',
@@ -44,6 +44,16 @@ function ResultWidget({ results }) {
             objectFit: 'cover',
           }}
           src={db.resultImage}
+          /> }
+
+          {score > 3 && score < 6 && <img
+          alt="final"
+          style={{
+            width: '100%',
+            height: '180px',
+            objectFit: 'cover',
+          }}
+          src={db.resultImage1st}
           /> }
 
           {score <=3 && <img
@@ -62,9 +72,10 @@ function ResultWidget({ results }) {
           lineHeight: '1.1em',
           textAlign: 'center'
         }}>
-          { score > 3 && `Boa ${name}, você acertou ${score} de 8 perguntas e provou que realmente manja de BTS`}
-          {score <= 3 &&
-							`Ops!! Apenas ${score} de 8 perguntas, tenho certeza que na próxima se sairá melhor! :)`}
+          { score >= 6 && `Boa ${name}, você é um mestre quando o assunto é BTS, provou que realmente manja e realmente faz parte do fandom! Parabéns!! :)`}
+          { score > 3 && score < 6 && `Eh... você conhece, mas não o suficiente para ser um Army. Sorte na próxima!`}
+          {score <= 3 && score > 1 `Ops!! Apenas ${score} acertos, tenho certeza que na próxima se sairá melhor! :)`}
+          {score <=1 `Essa foi péssima hein, mas na próxima você vai saber mais! Sorte!! :)`}
           
         </h5>
         
