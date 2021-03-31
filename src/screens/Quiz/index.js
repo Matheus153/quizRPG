@@ -74,7 +74,7 @@ function ResultWidget({ results }) {
         }}>
           { score >= 6 && `Boa ${name}, você é um mestre quando o assunto é BTS, provou que realmente manja e realmente faz parte do fandom! Parabéns!! :)`}
           { score > 3 && score < 6 && `Eh... você conhece, mas não o suficiente para ser um Army. Sorte na próxima!`}
-          {score <= 3 && score > 1 `Ops!! Apenas ${score} acertos, tenho certeza que na próxima se sairá melhor! :)`}
+          {score <= 3 && score > 1 && `Ops!! Apenas ${score} acertos, tenho certeza que na próxima se sairá melhor! :)`}
           {score <=1 `Essa foi péssima hein, mas na próxima você vai saber mais! Sorte!! :)`}
           
         </h5>
