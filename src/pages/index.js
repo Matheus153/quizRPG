@@ -1,8 +1,8 @@
 import React from 'react'
-import { openDB } from '../src/lib/openDB'
-import Principal from '../src/components/Principal'
-import QuizBackground from '../src/components/quizBackground'
-import GitHubCorner from '../src/components/GitHubCorner'
+import { openDB } from '../lib/openDB'
+import Principal from '../components/Principal'
+import QuizBackground from '../components/quizBackground'
+import GitHubCorner from '../components/GitHubCorner'
 import Head from 'next/head'
 
 

@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import QuizScreen from '../../src/screens/Quiz';
-import { openDB } from '../../src/lib/openDB'
+import QuizScreen from '../../screens/Quiz';
+import { openDB } from '../../lib/openDB'
 
 export default function QuizDaGaleraPage({posts}) {
   return (
