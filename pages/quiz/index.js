@@ -7,11 +7,11 @@ import { openDB } from '../../src/lib/openDB'
 export default function QuizDaGaleraPage({posts}) {
   return (
     <>
-     {posts.map((post, index) => (
+      {posts.map((post, index) => (
           <ThemeProvider key={index} theme={post.theme}></ThemeProvider>
       ))}
     
-    {posts.map((post, index) => (
+      {posts.map((post, index) => (
         <QuizScreen
         key={index}
         externalQuestions={post.questions}

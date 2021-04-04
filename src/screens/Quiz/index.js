@@ -295,7 +295,7 @@ export default function QuizPage({ externalQuestions, externalBg, post }) {
   return (
     <QuizBackground backgroundImage={bg}>
       <QuizContainer>
-        <img src={post?.theme.quizlogo} width="120px" margin="auto" />
+        <img src={"https://dewey.tailorbrands.com/production/brand_version_mockup_image/298/4605243298_545beea1-9f67-44b1-bd55-710f841a163d.png?cb=1612835865"} width="120px" margin="auto" />
         {screenState === screenStates.QUIZ && (
           <QuestionWidget
             question={question}
