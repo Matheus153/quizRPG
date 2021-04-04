@@ -3,7 +3,6 @@ import React from 'react';
 import { Lottie } from '@crello/react-lottie';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router'
-import db from '../../../db.json';
 import Widget from '../../components/Widget';
  
 import QuizBackground from '../../components/quizBackground';
@@ -16,7 +15,6 @@ import BackLinkArrow from '../../components/BackLinkArrow';
 import correctAnim from './animations/correctAnim';
 import incorrectAnim from './animations/incorrectAnim';
 import loadingAnimation from './animations/Bts.json';
-import { ThemeConsumer } from 'styled-components';
 
 function ResultWidget({ results }) {
 
@@ -43,7 +41,7 @@ function ResultWidget({ results }) {
             height: '180px',
             objectFit: 'cover',
           }}
-          src={db.resultImage}
+          src={'final.gif'}
           /> }
 
           {score > 3 && score < 6 && <img
@@ -53,7 +51,7 @@ function ResultWidget({ results }) {
             height: '180px',
             objectFit: 'cover',
           }}
-          src={db.resultImage1st}
+          src={'joinha.gif'}
           /> }
 
           {score <=3 && <img
@@ -63,7 +61,7 @@ function ResultWidget({ results }) {
             height: '180px',
             objectFit: 'cover',
           }}
-          src={db.resultImage2st}
+          src={'sad-BTS.gif'}
           /> }
       <Widget.Content> 
          
@@ -256,7 +254,7 @@ const screenStates = {
   LOADING: 'LOADING',
   RESULT: 'RESULT',
 };
-export default function QuizPage({ externalQuestions, externalBg }) {
+export default function QuizPage({ externalQuestions, externalBg, post }) {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResults] = React.useState([]);
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
@@ -297,7 +295,7 @@ export default function QuizPage({ externalQuestions, externalBg }) {
   return (
     <QuizBackground backgroundImage={bg}>
       <QuizContainer>
-        <img src={db.theme.quizlogo} width="120px" margin="auto" />
+        <img src={post?.theme.quizlogo} width="120px" margin="auto" />
         {screenState === screenStates.QUIZ && (
           <QuestionWidget
             question={question}

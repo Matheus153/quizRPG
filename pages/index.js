@@ -1,97 +1,36 @@
 import React from 'react'
-import Head from 'next/head'
-import styled from 'styled-components'
-import { useRouter } from 'next/router'
-import { motion } from 'framer-motion'
-/* import styles from '../styles/Mstyle.module.css' */
-
-import db from '../db.json';
-import Widget from '../src/components/Widget';
+import { openDB } from '../src/lib/openDB'
+import Principal from '../src/components/Principal'
 import QuizBackground from '../src/components/quizBackground'
 import GitHubCorner from '../src/components/GitHubCorner'
-import Input from '../src/components/Input'
-import Button from '../src/components/Button'
+import Head from 'next/head'
 
-const StyledContainer = styled.div`
-  width: 100%;
-  
-  // pressetes abaixo deixam o quiz no canto superior esquerdo
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 38%; 
-  min-height: 100vh; 
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-    min-height: 92vh;
-  }
-`;
 
-export default function Home() {
-  const router = useRouter()
-  const [name, setName] = React.useState('')
-
+export default function Home({ posts }) {
+ 
   return (
-    <QuizBackground backgroundImage={db.bg1}>
-      
-        <Head>
-          <title>Você conhece o BTS?</title>
-          <link rel="icon" href="https://img.icons8.com/nolan/2x/bts-logo.png" />
-        </Head>
-        <StyledContainer>
-          <Widget
-           as={motion.section}
-           transition={{ delay: 0.1, duration: 0.5, ease: "easeOut" }}
-           variants={{
-             show: {opacity: 1, y:'0'},
-             hidden: {opacity: 0, y:'55%'}
-           }}
-           initial="hidden"
-           animate="show"
-          >
-          <Widget.Header>
-            <h1>{db.title}</h1>
-          </Widget.Header>
-
-          <img src={"principal.jpg"} 
-           style={{
-            width: '100%',
-            height: '150px',
-            objectFit: 'cover',
-            marginTop: '20px'
-          }}
-          alt="principal"/>
-
-          <Widget.Content>
-            <form onSubmit= {function(infosDoEvento) {
-                infosDoEvento.preventDefault()
-                router.push(`/quiz?name= ${name}`)
-                console.log('Fazendo uma submissão pelo react')
-
-                // router manda para a proxima página.
-              }}>
-                <Input
-                  name="nomeDoUsuario"
-                  onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
-                  placeholder="Diz aí seu nome..."
-                  value={name}
-                />
-                <Button type="submit" disabled={name.length === 0}>
-                  {`Jogar`} {/* {name } */}
-                </Button>
-              </form>
-          </Widget.Content>
-          </Widget>
-        </StyledContainer>
-        
+    <QuizBackground backgroundImage={'https://wallpaperaccess.com/full/2752949.jpg'}>
+       <Head>
+        <title>Você conhece o BTS?</title>
+        <link rel="icon" href="https://img.icons8.com/nolan/2x/bts-logo.png" />
+      </Head>
+      {posts.map((post, index) => (
+        <Principal key={index} post={post}></Principal>
+      ))}
       <GitHubCorner projectUrl="https://github.com/Matheus153"/>
-    </QuizBackground>
-    
-  )
+    </QuizBackground>    
+  )  
+}
+export async function getServerSideProps(context) {
+  /*
+  * Implementar as buscas dos dados no MongoDB
+  */
+  const db = await openDB()
+  const data = await db.collection('dados').find().toArray()
 
+  return {
+    props: {
+      posts: JSON.parse(JSON.stringify(data)),
+    }, // will be passed to the page component as props
+  }
 }
