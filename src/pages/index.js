@@ -21,7 +21,7 @@ export default function Home({ posts }) {
     </QuizBackground>    
   )  
 }
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   /*
   * Implementar as buscas dos dados no MongoDB
   */
