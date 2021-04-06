@@ -6,8 +6,9 @@ import { motion } from 'framer-motion'
 import Widget from '../Widget';
 import Input from '../Input'
 import Button from '../Button'
+import db from '../../../db.json'
 
-export default function Principal({ post }) {
+export default function Principal() {
     const router = useRouter()
     const [name, setName] = React.useState('')
   
@@ -24,7 +25,7 @@ export default function Principal({ post }) {
              animate="show"
             >
             <Widget.Header>
-              <h1>{post?.title}</h1>
+              <h1>{db.title}</h1>
             </Widget.Header>
   
             <img src={"principal.jpg"} 

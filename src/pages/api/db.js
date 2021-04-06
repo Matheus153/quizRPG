@@ -1,4 +1,4 @@
-import { openDB } from '../../lib/openDB'
+import db from '../../../db.json'
 
 export default function dbHandler(request, response) {
   if (request.method === 'OPTIONS') {
@@ -10,5 +10,5 @@ export default function dbHandler(request, response) {
   response.setHeader('Access-Control-Allow-Origin', '*');
   response.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
 
-  response.json(openDB);
+  response.json(db);
 }

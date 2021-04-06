@@ -2,8 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import QuizScreen from '../../screens/Quiz';
-import { openDB } from '../../lib/openDB'
+import QuizScreen from '../../src/screens/Quiz';
 
 export default function QuizDaGaleraPage({ dbExterno }) {
   // const [db, setDb] React.useState({})
@@ -23,15 +22,29 @@ export default function QuizDaGaleraPage({ dbExterno }) {
 }
 
 export async function getServerSideProps(context) {
-  /*
-  * Implementar as buscas dos dados no MongoDB
-  */
-  const db = await openDB()
-  const data = await db.collection('dados').find().toArray()
+  const [projectName, githubUser] = context.query.id.split('___');
 
-  return {
-    props: {
-      posts: JSON.parse(JSON.stringify(data)),
-    }, // will be passed to the page component as props
+  try {
+    const dbExterno = await fetch(`https://${projectName}.${githubUser}.vercel.app/api/db`)
+      .then((respostaDoServer) => {
+        if (respostaDoServer.ok) {
+          return respostaDoServer.json();
+        }
+        throw new Error('Falha em pegar os dados');
+      })
+      .then((respostaConvertidaEmObjeto) => respostaConvertidaEmObjeto)
+      // .catch((err) => {
+      //   // console.error(err);
+      // });
+
+    // console.log('dbExterno', dbExterno);
+    // console.log('Infos que o Next da para nós', context.query.id);
+    return {
+      props: {
+        dbExterno,
+      },
+    };
+  } catch(err) {
+    throw new Error(err);
   }
 }

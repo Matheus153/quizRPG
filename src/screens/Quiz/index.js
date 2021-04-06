@@ -4,6 +4,7 @@ import { Lottie } from '@crello/react-lottie';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router'
 import Widget from '../../components/Widget';
+import db from '../../../db.json'
  
 import QuizBackground from '../../components/quizBackground';
 import QuizContainer from '../../components/QuizContainer';
@@ -41,7 +42,7 @@ function ResultWidget({ results }) {
             height: '180px',
             objectFit: 'cover',
           }}
-          src={'final.gif'}
+          src={db.resultImage}
           /> }
 
           {score > 3 && score < 6 && <img
@@ -51,7 +52,7 @@ function ResultWidget({ results }) {
             height: '180px',
             objectFit: 'cover',
           }}
-          src={'joinha.gif'}
+          src={db.resultImage1st}
           /> }
 
           {score <=3 && <img
@@ -61,7 +62,7 @@ function ResultWidget({ results }) {
             height: '180px',
             objectFit: 'cover',
           }}
-          src={'sad-BTS.gif'}
+          src={db.resultImage2st}
           /> }
       <Widget.Content> 
          
@@ -254,7 +255,7 @@ const screenStates = {
   LOADING: 'LOADING',
   RESULT: 'RESULT',
 };
-export default function QuizPage({ externalQuestions, externalBg, post }) {
+export default function QuizPage({ externalQuestions, externalBg }) {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResults] = React.useState([]);
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
@@ -293,9 +294,9 @@ export default function QuizPage({ externalQuestions, externalBg, post }) {
   }
 
   return (
-    <QuizBackground backgroundImage={bg}>
+    <QuizBackground backgroundImage={db.bg1}>
       <QuizContainer>
-        <img src={"https://dewey.tailorbrands.com/production/brand_version_mockup_image/298/4605243298_545beea1-9f67-44b1-bd55-710f841a163d.png?cb=1612835865"} width="120px" margin="auto" />
+        <img src={db.theme.quizlogo} width="120px" margin="auto" />
         {screenState === screenStates.QUIZ && (
           <QuestionWidget
             question={question}
