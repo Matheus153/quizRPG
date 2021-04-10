@@ -156,7 +156,8 @@
         "mainBg": "#202020",
         "contrastText": "#fefef3",
         "wrong": "#FF4522",
-        "success": "#4CAF50"
+        "success": "#4CAF50",
+        "exploration": "#04463a"
       },
       "borderRadius": "6px",
       "quizlogo": "https://dewey.tailorbrands.com/production/brand_version_mockup_image/298/4605243298_545beea1-9f67-44b1-bd55-710f841a163d.png?cb=1612835865",
