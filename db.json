@@ -60,20 +60,20 @@
         "image": "rpg.png",
         "title": "Qual destas está errada?",
         "description": "Soka...",
-        "answer": 3,
+        "answer": 0,
         "correct": "correta: Confiar seus objetos pessoais a um ladino",
         "alternatives": [
-          "Seguir os conselhos de um viajantes",
-          "Aceitar os presentes de um dráconito",
-          "Seguir as dicas do mestre do jogo",
-          "Confiar seus objetos pessoais a um ladino"
+          "Aceitar propostas de aventura sem informações precisas",
+          "Lutar com qualquer ser que esteja no seu nível",
+          "Seguir as dicas do mestre do jogo, exceto os fuleiros",
+          "Aprender o maior número de idiomas que puder"
         ]
       },
 
       {
         "image": "goblin-slayer.jpg",
         "title": "Você está numa batalha. Qual desses deve-se evitar em combate a curta distância?",
-        "description": "Esse você realmente não deve!",
+        "description": "Tatakae!",
         "answer": 0,
         "correct": "correta: Hobgoblins",
         "alternatives": [
@@ -107,7 +107,7 @@
         "alternatives": [
           "Você lança ataques a longa distância",
           "Espera o momento certo de atacar-lo pelas costas",
-          "Joga água nele para espanta-lo",
+          "Joga ácido para espantá-lo",
           "Não tem jeito, somente fique fora da vista e espere até ir embora"
          
         ]
@@ -115,14 +115,14 @@
 
       {
         "image": "Esfinge.jpg",
-        "title": "Enigma da esfinge: O que pela manhã tem quatro pés, a tarde tem dois, e à noite tem três? Caso erre você morre!",
+        "title": "Enigma da esfinge: O que pela manhã tem quatro pés, à tarde tem dois, e à noite tem três? Caso erre você morre!",
         "description": "Pense bem",
         "answer": 1,
         "correct": "correta: O Homem",
         "alternatives": [
           "O Cavalo",
           "O Homem",
-          "A Lâmia",
+          "A Montanha",
           "A Vida"
          
         ]
@@ -136,7 +136,7 @@
         "correct": "correta: Usar uma muralha com apoio de imensas balistas de alta precisão",
         "alternatives": [
           "Perdemo, vamo embora e deixar esse tesouro de lado",
-          "Usar uma muralha com apoio de imensas balistas de alta precisão",
+          "Usar balistas de alta precisão com apoio de muralhas",
           "Usar equipamento contra fogo de dragão",
           "Arremessar redes arcanas contra os dragões"
          
