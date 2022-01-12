@@ -145,9 +145,15 @@
       
     ],
 
+<<<<<<< HEAD
     "resultImage": "winner.gif",
     "resultImage2st": "hurt2st.gif",
     "resultImage3st": "death.gif",
+=======
+    "resultImage": "final.gif",
+    "resultImage1st": "joinha.gif",
+    "resultImage2st": "sad-BTS.gif",
+>>>>>>> 642b262f5f5f4e4399b93bd97e20e1656ba865b1
     
     "theme": {
       "colors": {

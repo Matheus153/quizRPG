@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import QuizScreen from '../../src/screens/Quiz';
+import QuizScreen from '../../screens/Quiz';
 
 export default function QuizDaGaleraPage({ dbExterno }) {
   // const [db, setDb] React.useState({})
