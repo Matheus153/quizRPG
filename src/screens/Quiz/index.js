@@ -13,16 +13,10 @@ import AlternativeMessage from '../../components/AlternativeMessage';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
 
-<<<<<<< HEAD
 import correctAnim from './animations/right.json';
 import incorrectAnim from './animations/error.json';
 import loadingAnimation from './animations/load.json';
 import { ThemeConsumer } from 'styled-components';
-=======
-import correctAnim from './animations/correctAnim';
-import incorrectAnim from './animations/incorrectAnim';
-import loadingAnimation from './animations/Bts.json';
->>>>>>> 642b262f5f5f4e4399b93bd97e20e1656ba865b1
 
 import Right from '../../assets/audio/right.mp3'
 import Wrong from '../../assets/audio/wrong.mp3'
@@ -45,11 +39,7 @@ function ResultWidget({ results }) {
       <Widget.Header>
         <h4>Resultado:</h4>
       </Widget.Header>
-<<<<<<< HEAD
           {score >= 8 && <img
-=======
-          {score >= 6 && <img
->>>>>>> 642b262f5f5f4e4399b93bd97e20e1656ba865b1
           alt="final"
           style={{
             width: '100%',
@@ -59,21 +49,17 @@ function ResultWidget({ results }) {
           src={db.resultImage}
           /> }
 
-<<<<<<< HEAD
-          {score > 3 && score < 8 && <img
-=======
-          {score > 3 && score < 6 && <img
+          {score >= 5 && score < 8 && <img
           alt="final"
           style={{
             width: '100%',
             height: '180px',
             objectFit: 'cover',
           }}
-          src={db.resultImage1st}
+          src={db.resultImage4st}
           /> }
 
-          {score <=3 && <img
->>>>>>> 642b262f5f5f4e4399b93bd97e20e1656ba865b1
+          {score > 3 && score < 5 && <img
           alt="final"
           style={{
             width: '100%',
@@ -99,16 +85,10 @@ function ResultWidget({ results }) {
           lineHeight: '1.1em',
           textAlign: 'center'
         }}>
-<<<<<<< HEAD
           { score >= 8 && `Boa ${name}, você não só sobreviveria como daria um show nessa aventura, arranjando os melhores itens e desbravando os lugares mas desafiadores de todos! Parabéns!! :)`}
-          { score > 3 && score < 8 && `Você está com um ferimento exposto, risco de gangrena. Você vai sobreviver? Não sabemos.`}
+          { score >= 5 && score < 8 && `Caramba! Você é um aventureiro nato. Possue excelentes atributos e um carisma de fazer inveja a qualquer um. Você provavelmente sobreviveria a está aventura!`}
+          { score > 3 && score < 5 && `Você está com um ferimento exposto, risco de gangrena. Você vai sobreviver? Não sabemos.`}
           {score <= 3 && `Opa!! Você acabou perdendo seus membros e foi morto por seu colega de equipe com uma forte dilaceração de orgão internos, morrendo em agonia intensa.`}
-=======
-          { score >= 6 && `Boa ${name}, você é um mestre quando o assunto é BTS, provou que realmente manja e realmente faz parte do fandom! Parabéns!! :)`}
-          { score > 3 && score < 6 && `Eh... você conhece, mas não o suficiente para ser um Army. Sorte na próxima!`}
-          {score <= 3 && score > 1 && `Ops!! Apenas ${score} acertos, tenho certeza que na próxima se sairá melhor! :)`}
-          {score <=1 && `Essa foi péssima hein, mas na próxima você vai saber mais! Sorte!! :)`}
->>>>>>> 642b262f5f5f4e4399b93bd97e20e1656ba865b1
           
         </h5>
         
@@ -288,13 +268,8 @@ function QuestionWidget({
             </Button>
           }
 
-<<<<<<< HEAD
           {isQuestionSubmited && isCorrect && <AlternativeMessage><Lottie config={{ animationData: correctAnim, loop: false, autoplay: true }} height={70} width={70} margin-top="20px"/></AlternativeMessage>}
           {isQuestionSubmited && !isCorrect && <AlternativeMessage><Lottie config={{ animationData: incorrectAnim, loop: false, autoplay: true }} height={50} width={50} margin-top="20px"/>
-=======
-          {isQuestionSubmited && isCorrect && <AlternativeMessage><Lottie config={{ animationData: correctAnim, loop: false, autoplay: true }} height={100} width={100} margin-top="10px"/></AlternativeMessage>}
-          {isQuestionSubmited && !isCorrect && <AlternativeMessage><Lottie config={{ animationData: incorrectAnim, loop: false, autoplay: true }} height={100} width={100} margin-top="10px"/>
->>>>>>> 642b262f5f5f4e4399b93bd97e20e1656ba865b1
           <p as={motion.p}  transition={{ delay: 0.4, duration: 1, ease: "easeOut" }}>{question.correct}</p></AlternativeMessage>}
         </AlternativesForm>
       </Widget.Content>
