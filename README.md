@@ -1,11 +1,6 @@
 <div align="center">
-<<<<<<< HEAD
 	<img src="public/banner-rpg.jpg" width="400"/>
     <h1>Quiz</h1>
-=======
-	<img src="public/banner-bts.jpg" width="400"/>
-	<h1>Quiz</h1>
->>>>>>> 642b262f5f5f4e4399b93bd97e20e1656ba865b1
 </div>
 
 ![Badge](https://img.shields.io/badge/Quiz-CDZ-%23542F61?style=for-the-badge&logo=appveyor)
