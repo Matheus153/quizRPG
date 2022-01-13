@@ -11,8 +11,7 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
        <Head>
-        <title>Você conhece o BTS?</title>
-        <link rel="icon" href="https://img.icons8.com/nolan/2x/bts-logo.png" />
+        <title>Quiz rpg</title>
       </Head>
     
       <Principal></Principal>
