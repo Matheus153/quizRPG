@@ -86,7 +86,7 @@ function ResultWidget({ results }) {
           textAlign: 'center'
         }}>
           { score >= 8 && `Boa ${name}, você não só sobreviveria como daria um show nessa aventura, arranjando os melhores itens e desbravando os lugares mas desafiadores de todos! Parabéns!! :)`}
-          { score >= 5 && score < 8 && `Caramba! Você é um aventureiro nato. Possue excelentes atributos e um carisma de fazer inveja a qualquer um. Você provavelmente sobreviveria a esta aventura!`}
+          { score >= 5 && score < 8 && `Caramba! Você é um aventureiro nato. Possui excelentes atributos e um carisma de fazer inveja a qualquer um. Você provavelmente sobreviveria a esta aventura!`}
           { score > 3 && score < 5 && `Você está com um ferimento exposto, risco de gangrena. Você vai sobreviver? Não sabemos.`}
           {score <= 3 && `Opa!! Você acabou perdendo seus membros e foi morto por seu colega de equipe com uma forte dilaceração de orgão internos, morrendo em agonia intensa.`}
           
